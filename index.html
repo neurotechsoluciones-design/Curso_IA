@@ -21,7 +21,7 @@
       overflow: hidden; 
       background-color: #0a0a0a; 
       box-shadow: 0 15px 35px rgba(0,0,0,0.6); 
-      border-collapse: separate !important; /* Necesario para que el radio del borde funcione */
+      border-collapse: separate !important;
     }
 
     .tech-title {
@@ -91,12 +91,20 @@
       object-fit: cover;
     }
 
-    /* Estilos responsivos */
+    /* Estilos responsivos corregidos */
     @media only screen and (max-width: 600px) { 
       .main-wrapper { width: 100% !important; } 
       .stack { display: block !important; width: 100% !important; margin-bottom: 20px !important; } 
       .hk-hero { font-size: 26px !important; }
-      .icon-cell { border-right: none !important; border-bottom: 1px solid rgba(255,255,255,0.1); width: 100% !important; padding: 20px 0 !important; text-align: center !important; }
+      /* Corrección de Sección 4 para móvil */
+      .icon-cell { 
+        width: 70px !important; 
+        padding: 15px !important; 
+        border-right: 1px solid rgba(255,255,255,0.1) !important; 
+        border-bottom: none !important; 
+      }
+      .profile-box-glass td { display: table-cell !important; } /* Evita que el icono se apile arriba */
+      .profile-box-glass img { width: 30px !important; }
     }
   </style>
 </head>
@@ -149,7 +157,7 @@
       </td>
     </tr>
 
-    <!-- [ SECCIÓN 3: ¿QUÉ LOGRAS EN 3 ENCUENTROS? - BORDES REDONDEADOS ] -->
+    <!-- [ SECCIÓN 3: ¿QUÉ LOGRAS EN 3 ENCUENTROS? ] -->
     <tr>
       <td style="background-image: url('https://github.com/neurotechsoluciones-design/neurotech-assets/blob/main/fondo_seccion3.png?raw=true'); background-size: cover; background-position: center; border-radius: 24px; padding: 40px; border: 1px solid rgba(33, 0, 229, 0.5); margin-bottom: 30px;">
         <table width="100%" cellpadding="0" cellspacing="0" border="0">
@@ -202,7 +210,7 @@
     </tr>
     <tr><td style="height: 30px;">&nbsp;</td></tr>
 
-    <!-- [ SECCIÓN 4: PÚBLICO OBJETIVO - CONTENIDO COMPLETO ] -->
+    <!-- [ SECCIÓN 4: PÚBLICO OBJETIVO ] -->
     <tr>
       <td>
         <table class="container" width="100%" cellpadding="40" cellspacing="0" border="0">
@@ -210,7 +218,7 @@
             <td>
               <h2 class="tech-title" style="font-size: 20px; margin: 0 0 35px 0;">¿Para quién es este curso?</h2>
               
-              <!-- Ítem 1 -->
+              <!-- Perfil 1 -->
               <table width="100%" cellpadding="0" cellspacing="0" border="0" class="profile-box-glass">
                 <tr>
                   <td width="85" align="center" valign="middle" class="icon-cell" style="border-right: 1px solid rgba(255, 255, 255, 0.1); padding: 20px;">
@@ -223,7 +231,7 @@
                 </tr>
               </table>
 
-              <!-- Ítem 2 -->
+              <!-- Perfil 2 -->
               <table width="100%" cellpadding="0" cellspacing="0" border="0" class="profile-box-glass">
                 <tr>
                   <td width="85" align="center" valign="middle" class="icon-cell" style="border-right: 1px solid rgba(255, 255, 255, 0.1); padding: 20px;">
@@ -236,7 +244,7 @@
                 </tr>
               </table>
 
-              <!-- Ítem 3 -->
+              <!-- Perfil 3 -->
               <table width="100%" cellpadding="0" cellspacing="0" border="0" class="profile-box-glass">
                 <tr>
                   <td width="85" align="center" valign="middle" class="icon-cell" style="border-right: 1px solid rgba(255, 255, 255, 0.1); padding: 20px;">
@@ -249,7 +257,7 @@
                 </tr>
               </table>
 
-              <!-- Ítem 4 -->
+              <!-- Perfil 4 -->
               <table width="100%" cellpadding="0" cellspacing="0" border="0" class="profile-box-glass">
                 <tr>
                   <td width="85" align="center" valign="middle" class="icon-cell" style="border-right: 1px solid rgba(255, 255, 255, 0.1); padding: 20px;">
@@ -262,7 +270,7 @@
                 </tr>
               </table>
 
-              <!-- Ítem 5 -->
+              <!-- Perfil 5 -->
               <table width="100%" cellpadding="0" cellspacing="0" border="0" class="profile-box-glass">
                 <tr>
                   <td width="85" align="center" valign="middle" class="icon-cell" style="border-right: 1px solid rgba(255, 255, 255, 0.1); padding: 20px;">
@@ -275,7 +283,7 @@
                 </tr>
               </table>
 
-              <!-- Ítem 6 -->
+              <!-- Perfil 6 -->
               <table width="100%" cellpadding="0" cellspacing="0" border="0" class="profile-box-glass">
                 <tr>
                   <td width="85" align="center" valign="middle" class="icon-cell" style="border-right: 1px solid rgba(255, 255, 255, 0.1); padding: 20px;">
@@ -339,7 +347,7 @@
       </td>
     </tr>
 
-    <!-- [ SECCIÓN 6: EQUIPO DOCENTE - ACTUALIZADA CON IVANA ] -->
+    <!-- [ SECCIÓN 6: EQUIPO DOCENTE ] -->
     <tr>
       <td>
         <table class="container" width="100%" cellpadding="40" cellspacing="0" border="0">
