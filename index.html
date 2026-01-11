@@ -7,7 +7,7 @@
   <!-- Título que aparece en la pestaña y al compartir -->
   <title>NeuroTech Academy | Curso IA Aplicada 2026</title>
   
-  <!-- Etiquetas Meta para que al compartir se vea profesional (WhatsApp, Instagram, etc) -->
+  <!-- Etiquetas Meta para que al compartir se vea profesional -->
   <meta name="description" content="Domina las herramientas de IA que definen el 2026. Un viaje inmersivo de 3 encuentros para potenciar tu profesión.">
   <meta property="og:title" content="NeuroTech Academy | Curso IA Aplicada 2026">
   <meta property="og:description" content="No solo uses la IA, aprende a hablar su lenguaje. Inscripciones abiertas para San Rafael, Mendoza.">
@@ -16,17 +16,16 @@
 
   <!-- [ ESTILOS DE FUENTE Y DISEÑO ] -->
   <style>
-    /* Importación de fuentes tecnológicas */
     @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Inter:wght@400;600&display=swap');
 
     body { background-color: #020202; margin: 0; padding: 0; font-family: 'Inter', Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
     table { border-collapse: collapse; border-spacing: 0; }
     
-    /* Contenedor principal de sección */
+    /* Contenedor principal de sección con bordes redondeados globales */
     .container { 
       margin-bottom: 30px; 
-      border: 1px solid rgba(33, 0, 229, 0.4); 
-      border-radius: 24px; 
+      border: 1px solid rgba(33, 0, 229, 0.5); 
+      border-radius: 24px !important; 
       overflow: hidden; 
       background-color: #0a0a0a; 
       box-shadow: 0 15px 35px rgba(0,0,0,0.6); 
@@ -45,7 +44,6 @@
       font-weight: bold;
     }
 
-    /* Tarjetas con efecto cristal */
     .glass-card {
       background: rgba(255, 255, 255, 0.05); 
       border: 1px solid rgba(255, 255, 255, 0.2); 
@@ -66,7 +64,6 @@
       margin-bottom: 15px;
     }
 
-    /* Filas de perfil en la sección ¿Para quién es? */
     .profile-box-glass {
       border: 1px solid rgba(255, 255, 255, 0.12);
       border-radius: 20px !important;
@@ -87,11 +84,12 @@
     }
 
     .module-card {
-      background: rgba(33, 0, 229, 0.03);
-      border: 1px solid rgba(33, 0, 229, 0.2);
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.15);
       border-radius: 16px;
       padding: 25px;
       margin-bottom: 25px;
+      backdrop-filter: blur(5px);
     }
 
     .docent-img {
@@ -100,7 +98,6 @@
       object-fit: cover;
     }
 
-    /* Estilos responsivos corregidos */
     @media only screen and (max-width: 600px) { 
       .main-wrapper { width: 100% !important; } 
       .stack { display: block !important; width: 100% !important; margin-bottom: 20px !important; } 
@@ -118,20 +115,10 @@
 </head>
 <body style="background-color: #020202; padding: 30px 0;">
 
-<!-- 
-  =========================================
-  [ VARIABLES DE CONTROL ]
-  =========================================
-  LINK TALLY: https://tally.so/r/1AdgPQ
-  WHATSAPP LINK: https://wa.me/5492604087086?text=Hola%20NeuroTech%20Soluciones!%20Me%20interesa%20inscribirme%20en%20el%20curso%20de%20IA%20Aplicada.
-  MAPS: https://www.google.com/maps/search/?api=1&query=Av.+El+Libertador+910,+San+Rafael,+Mendoza
-  =========================================
--->
-
 <center>
   <table class="main-wrapper" width="600" cellpadding="0" cellspacing="0" border="0">
     
-    <!-- [ SECCIÓN 1: CABECERA / LOGO ] -->
+    <!-- [ SECCIÓN 1: LOGO ] -->
     <tr>
       <td>
         <table class="container" width="100%" cellpadding="0" cellspacing="0" border="0">
@@ -144,10 +131,10 @@
       </td>
     </tr>
 
-    <!-- [ SECCIÓN 2: HERO / TÍTULO PRINCIPAL ] -->
+    <!-- [ SECCIÓN 2: HERO ] -->
     <tr>
       <td>
-        <table class="container" width="100%" cellpadding="50" cellspacing="0" border="0" style="border: 1px solid #2100E5; background: linear-gradient(180deg, #0a0a0a 0%, #020202 100%);">
+        <table class="container" width="100%" cellpadding="50" cellspacing="0" border="0" style="background: linear-gradient(180deg, #0a0a0a 0%, #020202 100%);">
           <tr>
             <td align="center">
               <h1 class="tech-title hk-hero" style="margin: 0; font-size: 34px; line-height: 1.1; text-shadow: 0 0 15px rgba(154, 255, 95, 0.4);">
@@ -165,49 +152,55 @@
       </td>
     </tr>
 
-    <!-- [ SECCIÓN 3: ¿QUÉ LOGRAS EN 3 ENCUENTROS? ] -->
+    <!-- [ SECCIÓN 3: LOGROS - BORDES REDONDEADOS ] -->
     <tr>
-      <td style="background-image: url('https://github.com/neurotechsoluciones-design/neurotech-assets/blob/main/fondo_seccion3.png?raw=true'); background-size: cover; background-position: center; border-radius: 24px; padding: 40px; border: 1px solid rgba(33, 0, 229, 0.5); margin-bottom: 30px;">
-        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+      <td>
+        <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom: 30px; border-collapse: separate !important;">
           <tr>
-            <td class="tech-title" style="padding-bottom: 35px; color: #ffffff; font-size: 18px; text-align: center; font-weight: 700;">¿Qué logras en 3 encuentros?</td>
-          </tr>
-          <tr>
-            <td>
+            <td style="background-image: url('https://github.com/neurotechsoluciones-design/neurotech-assets/blob/main/fondo_seccion3.png?raw=true'); background-size: cover; background-position: center right; border-radius: 24px; padding: 40px; border: 1px solid rgba(33, 0, 229, 0.5); overflow: hidden;">
               <table width="100%" cellpadding="0" cellspacing="0" border="0">
                 <tr>
-                  <td class="stack" width="250" valign="top">
-                    <div class="glass-card" style="min-height: 160px; border-radius: 20px;">
-                      <div class="step-badge" style="background-color: rgba(33, 0, 229, 0.2); border: 1px solid #2100E5; color: #ffffff;">PASO 01</div>
-                      <p style="color: #9AFF5F; font-family: 'Orbitron', sans-serif; font-weight: 700; margin: 0 0 10px 0; font-size: 13px;">Instrucciones</p>
-                      <p style="color: #ffffff; font-size: 13px; margin: 0; line-height: 1.5; font-weight: 400;">Domina el arte de dar órdenes para que la IA te entienda a la primera.</p>
-                    </div>
-                  </td>
-                  <td width="20" class="stack">&nbsp;</td>
-                  <td class="stack" width="250" valign="top">
-                    <div class="glass-card" style="min-height: 160px; border-radius: 20px;">
-                      <div class="step-badge" style="background-color: rgba(154, 255, 95, 0.1); border: 1px solid #9AFF5F; color: #9AFF5F;">PASO 02</div>
-                      <p style="color: #ffffff; font-family: 'Orbitron', sans-serif; font-weight: 700; margin: 0 0 10px 0; font-size: 13px;">Gemelo Digital</p>
-                      <p style="color: #ffffff; font-size: 13px; margin: 0; line-height: 1.5; font-weight: 400;">Entrena a la IA con tu voz de marca para redactar con tu esencia.</p>
-                    </div>
-                  </td>
+                  <td class="tech-title" style="padding-bottom: 35px; color: #ffffff; font-size: 18px; text-align: center; font-weight: 700;">¿Qué logras en 3 encuentros?</td>
                 </tr>
-                <tr><td colspan="3" style="height: 20px;">&nbsp;</td></tr>
                 <tr>
-                  <td class="stack" width="250" valign="top">
-                    <div class="glass-card" style="min-height: 160px; border-radius: 20px;">
-                      <div class="step-badge" style="background-color: rgba(154, 255, 95, 0.1); border: 1px solid #9AFF5F; color: #9AFF5F;">PASO 03</div>
-                      <p style="color: #ffffff; font-family: 'Orbitron', sans-serif; font-weight: 700; margin: 0 0 10px 0; font-size: 13px;">Asistente Ventas</p>
-                      <p style="color: #ffffff; font-size: 13px; margin: 0; line-height: 1.5; font-weight: 400;">Configura un experto que atienda tus clientes en segundos.</p>
-                    </div>
-                  </td>
-                  <td width="20" class="stack">&nbsp;</td>
-                  <td class="stack" width="250" valign="top">
-                    <div class="glass-card" style="min-height: 160px; border-radius: 20px;">
-                      <div class="step-badge" style="background-color: rgba(33, 0, 229, 0.2); border: 1px solid #2100E5; color: #ffffff;">PASO 04</div>
-                      <p style="color: #9AFF5F; font-family: 'Orbitron', sans-serif; font-weight: 700; margin: 0 0 10px 0; font-size: 13px;">Web Tools</p>
-                      <p style="color: #ffffff; font-size: 13px; margin: 0; line-height: 1.5; font-weight: 400;">Desarrolla herramientas interactivas sin escribir una sola línea de código.</p>
-                    </div>
+                  <td>
+                    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                      <tr>
+                        <td class="stack" width="250" valign="top">
+                          <div class="glass-card">
+                            <div class="step-badge" style="background-color: rgba(33, 0, 229, 0.2); border: 1px solid #2100E5; color: #ffffff;">PASO 01</div>
+                            <p style="color: #9AFF5F; font-family: 'Orbitron', sans-serif; font-weight: 700; margin: 0 0 10px 0; font-size: 13px;">Instrucciones</p>
+                            <p style="color: #ffffff; font-size: 13px; margin: 0; line-height: 1.5; font-weight: 400;">Domina el arte de dar órdenes para que la IA te entienda a la primera.</p>
+                          </div>
+                        </td>
+                        <td width="20" class="stack">&nbsp;</td>
+                        <td class="stack" width="250" valign="top">
+                          <div class="glass-card">
+                            <div class="step-badge" style="background-color: rgba(154, 255, 95, 0.1); border: 1px solid #9AFF5F; color: #9AFF5F;">PASO 02</div>
+                            <p style="color: #ffffff; font-family: 'Orbitron', sans-serif; font-weight: 700; margin: 0 0 10px 0; font-size: 13px;">Gemelo Digital</p>
+                            <p style="color: #ffffff; font-size: 13px; margin: 0; line-height: 1.5; font-weight: 400;">Entrena a la IA con tu voz de marca para redactar con tu esencia.</p>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr><td colspan="3" style="height: 20px;">&nbsp;</td></tr>
+                      <tr>
+                        <td class="stack" width="250" valign="top">
+                          <div class="glass-card">
+                            <div class="step-badge" style="background-color: rgba(154, 255, 95, 0.1); border: 1px solid #9AFF5F; color: #9AFF5F;">PASO 03</div>
+                            <p style="color: #ffffff; font-family: 'Orbitron', sans-serif; font-weight: 700; margin: 0 0 10px 0; font-size: 13px;">Asistente Ventas</p>
+                            <p style="color: #ffffff; font-size: 13px; margin: 0; line-height: 1.5; font-weight: 400;">Configura un experto que atienda tus clientes en segundos.</p>
+                          </div>
+                        </td>
+                        <td width="20" class="stack">&nbsp;</td>
+                        <td class="stack" width="250" valign="top">
+                          <div class="glass-card">
+                            <div class="step-badge" style="background-color: rgba(33, 0, 229, 0.2); border: 1px solid #2100E5; color: #ffffff;">PASO 04</div>
+                            <p style="color: #9AFF5F; font-family: 'Orbitron', sans-serif; font-weight: 700; margin: 0 0 10px 0; font-size: 13px;">Web Tools</p>
+                            <p style="color: #ffffff; font-size: 13px; margin: 0; line-height: 1.5; font-weight: 400;">Desarrolla herramientas interactivas sin escribir una sola línea de código.</p>
+                          </div>
+                        </td>
+                      </tr>
+                    </table>
                   </td>
                 </tr>
               </table>
@@ -216,7 +209,6 @@
         </table>
       </td>
     </tr>
-    <tr><td style="height: 30px;">&nbsp;</td></tr>
 
     <!-- [ SECCIÓN 4: PÚBLICO OBJETIVO ] -->
     <tr>
@@ -286,7 +278,7 @@
                 </tr>
               </table>
 
-              <table width="100%" cellpadding="0" cellspacing="0" border="0" class="profile-box-glass">
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" class="profile-box-glass" style="margin-bottom: 0;">
                 <tr>
                   <td width="85" align="center" valign="middle" class="icon-cell" style="border-right: 1px solid rgba(255, 255, 255, 0.1); padding: 20px;">
                     <img src="https://img.icons8.com/m_outlined/100/2100E5/home-automation.png" width="45" alt="Seniors">
@@ -303,45 +295,51 @@
       </td>
     </tr>
 
-    <!-- [ SECCIÓN 5: PROGRAMA DETALLADO ] -->
+    <!-- [ SECCIÓN 5: PROGRAMA - BORDES REDONDEADOS ] -->
     <tr>
       <td>
-        <table class="container" width="100%" cellpadding="40" cellspacing="0" border="0">
+        <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom: 30px; border-collapse: separate !important;">
           <tr>
-            <td>
-              <h2 class="tech-title" style="font-size: 22px; margin: 0 0 10px 0; text-align: center;">Programa IA Aplicada</h2>
-              <p style="color: #666; font-size: 13px; text-align: center; margin-bottom: 40px;">Un viaje de 3 encuentros para dominar el 2026.</p>
+            <td style="background-image: url('https://github.com/neurotechsoluciones-design/neurotech-assets/blob/main/fondo_seccion3.png?raw=true'); background-size: cover; background-position: center left; border-radius: 24px; padding: 40px; border: 1px solid rgba(33, 0, 229, 0.5); overflow: hidden;">
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td>
+                    <h2 class="tech-title" style="font-size: 22px; margin: 0 0 10px 0; text-align: center; color: #ffffff;">Programa IA Aplicada</h2>
+                    <p style="color: #9AFF5F; font-size: 13px; text-align: center; margin-bottom: 40px; font-weight: bold; text-transform: uppercase; letter-spacing: 1px;">Un viaje de 3 encuentros para dominar el 2026.</p>
 
-              <div class="module-card">
-                <span style="background: #2100E5; color: #fff; padding: 4px 12px; border-radius: 4px; font-family: 'Orbitron', sans-serif; font-size: 10px; font-weight: bold;">17 ENE | 10:00 hs</span>
-                <h3 class="tech-title" style="color: #ffffff; font-size: 16px; margin: 15px 0 10px 0;">📍 BLOQUE 1: EL CIMIENTO INMERSIVO</h3>
-                <ul style="color: #ccc; font-size: 13px; line-height: 1.6; padding-left: 20px;">
-                  <li>Era Exponencial: IA como plataforma de valor.</li>
-                  <li>Configuración Pro: Personaliza ChatGPT.</li>
-                  <li>Prompt Engineering: Instrucciones precisas.</li>
-                  <li>Tu Primer Asistente: Entrenamiento con datos propios.</li>
-                </ul>
-              </div>
+                    <div class="module-card">
+                      <span style="background: #2100E5; color: #fff; padding: 4px 12px; border-radius: 4px; font-family: 'Orbitron', sans-serif; font-size: 10px; font-weight: bold;">17 ENE | 10:00 hs</span>
+                      <h3 class="tech-title" style="color: #9AFF5F; font-size: 16px; margin: 15px 0 10px 0;">📍 BLOQUE 1: EL CIMIENTO INMERSIVO</h3>
+                      <ul style="color: #eee; font-size: 13px; line-height: 1.6; padding-left: 20px;">
+                        <li>Era Exponencial: IA como plataforma de valor.</li>
+                        <li>Configuración Pro: Personaliza ChatGPT.</li>
+                        <li>Prompt Engineering: Instrucciones precisas.</li>
+                        <li>Tu Primer Asistente: Entrenamiento con datos propios.</li>
+                      </ul>
+                    </div>
 
-              <div class="module-card">
-                <span style="background: rgba(154, 255, 95, 0.2); border: 1px solid #9AFF5F; color: #9AFF5F; padding: 4px 12px; border-radius: 4px; font-family: 'Orbitron', sans-serif; font-size: 10px; font-weight: bold;">24 ENE | 10:00 hs</span>
-                <h3 class="tech-title" style="color: #ffffff; font-size: 16px; margin: 15px 0 10px 0;">📍 BLOQUE 2: PODER AUDIOVISUAL</h3>
-                <ul style="color: #ccc; font-size: 13px; line-height: 1.6; padding-left: 20px;">
-                  <li>Laboratorio Multimedia: Imágenes, video y música.</li>
-                  <li>Diseño Exponencial: Websites y Presentaciones IA.</li>
-                  <li>Marketing Estratégico: Destacar en mercados saturados.</li>
-                </ul>
-              </div>
+                    <div class="module-card">
+                      <span style="background: rgba(154, 255, 95, 0.2); border: 1px solid #9AFF5F; color: #9AFF5F; padding: 4px 12px; border-radius: 4px; font-family: 'Orbitron', sans-serif; font-size: 10px; font-weight: bold;">24 ENE | 10:00 hs</span>
+                      <h3 class="tech-title" style="color: #9AFF5F; font-size: 16px; margin: 15px 0 10px 0;">📍 BLOQUE 2: PODER AUDIOVISUAL</h3>
+                      <ul style="color: #eee; font-size: 13px; line-height: 1.6; padding-left: 20px;">
+                        <li>Laboratorio Multimedia: Imágenes, video y música.</li>
+                        <li>Diseño Exponencial: Websites y Presentaciones IA.</li>
+                        <li>Marketing Estratégico: Destacar en mercados saturados.</li>
+                      </ul>
+                    </div>
 
-              <div class="module-card" style="margin-bottom: 0;">
-                <span style="background: #2100E5; color: #fff; padding: 4px 12px; border-radius: 4px; font-family: 'Orbitron', sans-serif; font-size: 10px; font-weight: bold;">31 ENE | 10:00 hs</span>
-                <h3 class="tech-title" style="color: #ffffff; font-size: 16px; margin: 15px 0 10px 0;">📍 BLOQUE 3: EL FUTURO DEL TRABAJO</h3>
-                <ul style="color: #ccc; font-size: 13px; line-height: 1.6; padding-left: 20px;">
-                  <li>Presentaciones Pro: Gamma avanzado.</li>
-                  <li>Investigación Asistida: NotebookLM profundo.</li>
-                  <li>Business Intelligence: Análisis de datos con GenAI.</li>
-                </ul>
-              </div>
+                    <div class="module-card" style="margin-bottom: 0;">
+                      <span style="background: #2100E5; color: #fff; padding: 4px 12px; border-radius: 4px; font-family: 'Orbitron', sans-serif; font-size: 10px; font-weight: bold;">31 ENE | 10:00 hs</span>
+                      <h3 class="tech-title" style="color: #9AFF5F; font-size: 16px; margin: 15px 0 10px 0;">📍 BLOQUE 3: EL FUTURO DEL TRABAJO</h3>
+                      <ul style="color: #eee; font-size: 13px; line-height: 1.6; padding-left: 20px;">
+                        <li>Presentaciones Pro: Gamma avanzado.</li>
+                        <li>Investigación Asistida: NotebookLM profundo.</li>
+                        <li>Business Intelligence: Análisis de datos con GenAI.</li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+              </table>
             </td>
           </tr>
         </table>
@@ -403,15 +401,15 @@
     <!-- [ SECCIÓN 7: OFERTA FINAL ] -->
     <tr>
       <td>
-        <table class="container" width="100%" cellpadding="40" cellspacing="0" border="0">
+        <table class="container" width="100%" cellpadding="40" cellspacing="0" border="0" style="background-color: #000; border: 2px solid #9AFF5F; box-shadow: 0 0 25px rgba(154, 255, 95, 0.2);">
           <tr>
             <td>
-              <div style="background: rgba(154, 255, 95, 0.05); border: 1px solid rgba(154, 255, 95, 0.2); border-radius: 16px; padding: 25px; margin-bottom: 30px;">
+              <div style="background: rgba(154, 255, 95, 0.05); border: 1px solid rgba(154, 255, 95, 0.2); border-radius: 16px; padding: 25px; margin-bottom: 30px; text-align: left;">
                 <h3 class="tech-title" style="font-size: 18px; margin: 0 0 10px 0;">Metodología: Inmersión Total</h3>
                 <p style="color: #eee; font-size: 14px; line-height: 1.6;">Espacio de entrenamiento presencial donde aplicaremos la IA a tus desafíos reales para llevarte soluciones funcionando.</p>
               </div>
 
-              <div style="background-color: #000; border: 2px solid #9AFF5F; border-radius: 20px; padding: 35px; text-align: center; box-shadow: 0 0 25px rgba(154, 255, 95, 0.2);">
+              <div style="text-align: center;">
                 <p class="tech-title" style="font-size: 14px; margin-bottom: 20px;">Inversión y Cupo Exclusivo</p>
                 
                 <a href="https://www.google.com/maps/search/?api=1&query=Av.+El+Libertador+910,+San+Rafael,+Mendoza" target="_blank" style="color: #ffffff; text-decoration: none; font-size: 14px; font-weight: 600; display: block; margin-bottom: 10px;">
@@ -432,7 +430,7 @@
       </td>
     </tr>
 
-    <!-- [ SECCIÓN 8: CONTACTO / REDES ] -->
+    <!-- [ SECCIÓN 8: CONTACTO ] -->
     <tr>
       <td style="padding: 0 0 50px 0;">
         <table width="100%" cellpadding="0" cellspacing="0" border="0" style="text-align: center;">
