@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NeuroTech Academy - Plantilla Maestra Premium</title>
+  
+  <!-- [ ESTILOS DE FUENTE Y DISEÑO ] -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Inter:wght@400;600&display=swap');
+
+    body { background-color: #020202; margin: 0; padding: 0; font-family: 'Inter', Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+    table { border-collapse: collapse; border-spacing: 0; }
+    
+    .container { 
+      margin-bottom: 30px; 
+      border: 1px solid rgba(33, 0, 229, 0.4); 
+      border-radius: 24px; 
+      overflow: hidden; 
+      background-color: #0a0a0a; 
+      box-shadow: 0 15px 35px rgba(0,0,0,0.6); 
+      border-collapse: separate !important;
+    }
+
+    .tech-title {
+      font-family: 'Orbitron', sans-serif !important;
+      letter-spacing: 2px !important;
+      text-transform: uppercase !important;
+      color: #9AFF5F !important;
+    }
+
+    .highlight-text {
+      color: #9AFF5F;
+      font-weight: bold;
+    }
+
+    .glass-card {
+      background: rgba(255, 255, 255, 0.05); 
+      border: 1px solid rgba(255, 255, 255, 0.2); 
+      border-radius: 20px; 
+      padding: 25px; 
+      box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    }
+
+    .step-badge {
+      display: inline-block;
+      padding: 4px 12px;
+      border-radius: 6px;
+      font-family: 'Orbitron', sans-serif;
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 15px;
+    }
+
+    /* Estilo para las filas de perfil con Glassmorphism corregido */
+    .profile-box-glass {
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.03);
+      margin-bottom: 20px;
+      border-collapse: separate !important;
+    }
+
+    .profile-title-tech {
+      font-family: 'Orbitron', sans-serif !important;
+      color: #9AFF5F;
+      font-size: 14px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+      display: block;
+    }
+
+    .module-card {
+      background: rgba(33, 0, 229, 0.03);
+      border: 1px solid rgba(33, 0, 229, 0.2);
+      border-radius: 16px;
+      padding: 25px;
+      margin-bottom: 25px;
+    }
+
+    .docent-img {
+      border-radius: 50%;
+      border: 2px solid #2100E5;
+      object-fit: cover;
+    }
+
+    @media only screen and (max-width: 600px) { 
+      .main-wrapper { width: 100% !important; } 
+      .stack { display: block !important; width: 100% !important; margin-bottom: 20px !important; } 
+      .hk-hero { font-size: 26px !important; }
+      .icon-cell { border-right: none !important; border-bottom: 1px solid rgba(255,255,255,0.1); width: 100% !important; padding: 20px 0 !important; }
+    }
+  </style>
+</head>
+<body style="background-color: #020202; padding: 30px 0;">
+
+<!-- 
+  =========================================
+  [ VARIABLES DE CONTROL ]
+  =========================================
+  LINK TALLY: https://tally.so/r/1AdgPQ
+  WHATSAPP LINK: https://wa.me/5492604087086?text=Hola%20NeuroTech%20Soluciones!%20Me%20interesa%20inscribirme%20en%20el%20curso%20de%20IA%20Aplicada.
+  GOOGLE MAPS: https://www.google.com/maps/search/?api=1&query=Av.+El+Libertador+910,+San+Rafael,+Mendoza
+  LOGO: https://github.com/neurotechsoluciones-design/neurotech-assets/blob/d40e800d52607451a69ec394b84db98fc36a8d82/logo_%20Neurotech_soluciones.png?raw=true
+  FONDO SECC 3: https://github.com/neurotechsoluciones-design/neurotech-assets/blob/main/fondo_seccion3.png?raw=true
+  ICONOS PERFIL (Line-art profesional):
+  - Rocket (Empresarios): https://img.icons8.com/m_outlined/100/9AFF5F/rocket.png
+  - Code (Técnicos): https://img.icons8.com/m_outlined/100/2100E5/code.png
+  - Globe (Turismo): https://img.icons8.com/m_outlined/100/9AFF5F/globe.png
+  - Paint (Creativos): https://img.icons8.com/m_outlined/100/2100E5/paint-brush.png
+  - Edu (Salud/Educación): https://img.icons8.com/m_outlined/100/9AFF5F/graduation-cap.png
+  - Tech (Senior): https://img.icons8.com/m_outlined/100/2100E5/smart-home.png
+  =========================================
+-->
+
+<center>
+  <table class="main-wrapper" width="600" cellpadding="0" cellspacing="0" border="0">
+    
+    <!-- [ SECCIÓN 1: CABECERA / LOGO ] -->
+    <tr>
+      <td>
+        <table class="container" width="100%" cellpadding="0" cellspacing="0" border="0">
+          <tr>
+            <td align="center">
+              <img src="https://github.com/neurotechsoluciones-design/neurotech-assets/blob/d40e800d52607451a69ec394b84db98fc36a8d82/logo_%20Neurotech_soluciones.png?raw=true" alt="NeuroTech Academy" width="600" style="width: 100%; display: block;">
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+    <!-- [ SECCIÓN 2: HERO / TÍTULO PRINCIPAL ] -->
+    <tr>
+      <td>
+        <table class="container" width="100%" cellpadding="50" cellspacing="0" border="0" style="border: 1px solid #2100E5; background: linear-gradient(180deg, #0a0a0a 0%, #020202 100%);">
+          <tr>
+            <td align="center">
+              <h1 class="tech-title hk-hero" style="margin: 0; font-size: 34px; line-height: 1.1; text-shadow: 0 0 15px rgba(154, 255, 95, 0.4);">
+                Curso Inteligencia <br> Artificial Aplicada
+              </h1>
+              <p style="color: #ffffff; font-size: 18px; margin-top: 25px; line-height: 1.6; font-weight: 400;">
+                No es solo usar una herramienta; es aprender a <span class="highlight-text">hablar el lenguaje de la IA</span> para transformar tu profesión y optimizar tu negocio.
+              </p>
+              <div style="margin-top: 40px;">
+                <a href="https://tally.so/r/1AdgPQ" style="background-color: #9AFF5F; color: #000000; padding: 18px 40px; text-decoration: none; border-radius: 50px; font-weight: 700; font-size: 15px; font-family: 'Orbitron', sans-serif; letter-spacing: 1px; box-shadow: 0 0 20px rgba(154, 255, 95, 0.4);">INSCRIBIRME AHORA</a>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+    <!-- [ SECCIÓN 3: ¿QUÉ LOGRAS EN 3 ENCUENTROS? ] -->
+    <tr>
+      <td style="background-image: url('https://github.com/neurotechsoluciones-design/neurotech-assets/blob/main/fondo_seccion3.png?raw=true'); background-size: cover; background-position: center; border-radius: 24px; padding: 40px; border: 1px solid rgba(33, 0, 229, 0.5); margin-bottom: 30px;">
+        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+          <tr>
+            <td class="tech-title" style="padding-bottom: 35px; color: #ffffff; font-size: 18px; text-align: center; font-weight: 700;">¿Qué logras en 3 encuentros?</td>
+          </tr>
+          <tr>
+            <td>
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td class="stack" width="250" valign="top">
+                    <div class="glass-card" style="min-height: 160px; border-radius: 20px;">
+                      <div class="step-badge" style="background-color: rgba(33, 0, 229, 0.2); border: 1px solid #2100E5; color: #ffffff;">PASO 01</div>
+                      <p style="color: #9AFF5F; font-family: 'Orbitron', sans-serif; font-weight: 700; margin: 0 0 10px 0; font-size: 13px;">Instrucciones</p>
+                      <p style="color: #ffffff; font-size: 13px; margin: 0; line-height: 1.5; font-weight: 400;">Domina el arte de dar órdenes para que la IA te entienda a la primera.</p>
+                    </div>
+                  </td>
+                  <td width="20" class="stack">&nbsp;</td>
+                  <td class="stack" width="250" valign="top">
+                    <div class="glass-card" style="min-height: 160px; border-radius: 20px;">
+                      <div class="step-badge" style="background-color: rgba(154, 255, 95, 0.1); border: 1px solid #9AFF5F; color: #9AFF5F;">PASO 02</div>
+                      <p style="color: #ffffff; font-family: 'Orbitron', sans-serif; font-weight: 700; margin: 0 0 10px 0; font-size: 13px;">Gemelo Digital</p>
+                      <p style="color: #ffffff; font-size: 13px; margin: 0; line-height: 1.5; font-weight: 400;">Entrena a la IA con tu voz de marca para redactar con tu esencia.</p>
+                    </div>
+                  </td>
+                </tr>
+                <tr><td colspan="3" style="height: 20px;">&nbsp;</td></tr>
+                <tr>
+                  <td class="stack" width="250" valign="top">
+                    <div class="glass-card" style="min-height: 160px; border-radius: 20px;">
+                      <div class="step-badge" style="background-color: rgba(154, 255, 95, 0.1); border: 1px solid #9AFF5F; color: #9AFF5F;">PASO 03</div>
+                      <p style="color: #ffffff; font-family: 'Orbitron', sans-serif; font-weight: 700; margin: 0 0 10px 0; font-size: 13px;">Asistente Ventas</p>
+                      <p style="color: #ffffff; font-size: 13px; margin: 0; line-height: 1.5; font-weight: 400;">Configura un experto que atienda tus clientes en segundos.</p>
+                    </div>
+                  </td>
+                  <td width="20" class="stack">&nbsp;</td>
+                  <td class="stack" width="250" valign="top">
+                    <div class="glass-card" style="min-height: 160px; border-radius: 20px;">
+                      <div class="step-badge" style="background-color: rgba(33, 0, 229, 0.2); border: 1px solid #2100E5; color: #ffffff;">PASO 04</div>
+                      <p style="color: #9AFF5F; font-family: 'Orbitron', sans-serif; font-weight: 700; margin: 0 0 10px 0; font-size: 13px;">Web Tools</p>
+                      <p style="color: #ffffff; font-size: 13px; margin: 0; line-height: 1.5; font-weight: 400;">Desarrolla herramientas interactivas sin escribir una sola línea de código.</p>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr><td style="height: 30px;">&nbsp;</td></tr>
+
+    <!-- [ SECCIÓN 4: PÚBLICO OBJETIVO - DISEÑO GLASS PREMIUM ] -->
+    <tr>
+      <td>
+        <table class="container" width="100%" cellpadding="40" cellspacing="0" border="0">
+          <tr>
+            <td>
+              <h2 class="tech-title" style="font-size: 20px; margin: 0 0 35px 0;">¿Para quién es este curso?</h2>
+              
+              <!-- Perfil 1: Emprendedores -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" class="profile-box-glass">
+                <tr>
+                  <td width="85" align="center" valign="middle" class="icon-cell" style="border-right: 1px solid rgba(255, 255, 255, 0.1); padding: 20px; border-top-left-radius: 20px; border-bottom-left-radius: 20px;">
+                    <img src="https://img.icons8.com/m_outlined/100/9AFF5F/rocket.png" width="45" alt="Emprendedores" style="display: block;">
+                  </td>
+                  <td style="padding: 25px; color: #ccc; font-size: 14px; line-height: 1.7; border-top-right-radius: 20px; border-bottom-right-radius: 20px;">
+                    <strong class="profile-title-tech">Emprendedores y Dueños de Negocios</strong>
+                    Ideales para quienes buscan impulsar un negocio desde cero o escalar uno existente. Aprenderás a automatizar tu web y marketing para generar ingresos mientras recuperas tiempo.
+                  </td>
+                </tr>
+              </table>
+
+              <!-- Perfil 2: Técnicos -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" class="profile-box-glass">
+                <tr>
+                  <td width="85" align="center" valign="middle" class="icon-cell" style="border-right: 1px solid rgba(255, 255, 255, 0.1); padding: 20px; border-top-left-radius: 20px; border-bottom-left-radius: 20px;">
+                    <img src="https://img.icons8.com/m_outlined/100/2100E5/code.png" width="45" alt="Técnicos" style="display: block;">
+                  </td>
+                  <td style="padding: 25px; color: #ccc; font-size: 14px; line-height: 1.7; border-top-right-radius: 20px; border-bottom-right-radius: 20px;">
+                    <strong class="profile-title-tech">Técnicos y Analistas</strong>
+                    Orientado a profesionales que manejan datos complejos y necesitan resultados más rápidos y precisos. Dominarás la programación por IA para crear herramientas personalizadas de análisis sin ser programador.
+                  </td>
+                </tr>
+              </table>
+
+              <!-- Perfil 3: Turismo -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" class="profile-box-glass">
+                <tr>
+                  <td width="85" align="center" valign="middle" class="icon-cell" style="border-right: 1px solid rgba(255, 255, 255, 0.1); padding: 20px; border-top-left-radius: 20px; border-bottom-left-radius: 20px;">
+                    <img src="https://img.icons8.com/m_outlined/100/9AFF5F/globe.png" width="45" alt="Turismo" style="display: block;">
+                  </td>
+                  <td style="padding: 25px; color: #ccc; font-size: 14px; line-height: 1.7; border-top-right-radius: 20px; border-bottom-right-radius: 20px;">
+                    <strong class="profile-title-tech">Sector Turismo y Comercio Local</strong>
+                    Aprenderás a conceptualizar estrategias de marketing turístico y atención al cliente que te diferencien en el mercado receptivo.
+                  </td>
+                </tr>
+              </table>
+
+              <!-- Perfil 4: Creativos -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" class="profile-box-glass">
+                <tr>
+                  <td width="85" align="center" valign="middle" class="icon-cell" style="border-right: 1px solid rgba(255, 255, 255, 0.1); padding: 20px; border-top-left-radius: 20px; border-bottom-left-radius: 20px;">
+                    <img src="https://img.icons8.com/m_outlined/100/2100E5/paint-brush.png" width="45" alt="Creativos" style="display: block;">
+                  </td>
+                  <td style="padding: 25px; color: #ccc; font-size: 14px; line-height: 1.7; border-top-right-radius: 20px; border-bottom-right-radius: 20px;">
+                    <strong class="profile-title-tech">Creativos y Artistas</strong>
+                    Diseñado para quienes buscan evolucionar su estilo y técnica. Utilizarás la IA como un colaborador creativo y expandirás tus límites sin barreras tecnológicas.
+                  </td>
+                </tr>
+              </table>
+
+              <!-- Perfil 5: Educación -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" class="profile-box-glass">
+                <tr>
+                  <td width="85" align="center" valign="middle" class="icon-cell" style="border-right: 1px solid rgba(255, 255, 255, 0.1); padding: 20px; border-top-left-radius: 20px; border-bottom-left-radius: 20px;">
+                    <img src="https://img.icons8.com/m_outlined/100/9AFF5F/graduation-cap.png" width="45" alt="Educación" style="display: block;">
+                  </td>
+                  <td style="padding: 25px; color: #ccc; font-size: 14px; line-height: 1.7; border-top-right-radius: 20px; border-bottom-right-radius: 20px;">
+                    <strong class="profile-title-tech">Educación, Salud y Administrativo</strong>
+                    Para quienes desean optimizar tareas clínicas o administrativas sin reemplazar el vínculo humano, usando la IA como un complemento estratégico.
+                  </td>
+                </tr>
+              </table>
+
+              <!-- Perfil 6: Seniors -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" class="profile-box-glass">
+                <tr>
+                  <td width="85" align="center" valign="middle" class="icon-cell" style="border-right: 1px solid rgba(255, 255, 255, 0.1); padding: 20px; border-top-left-radius: 20px; border-bottom-left-radius: 20px;">
+                    <img src="https://img.icons8.com/m_outlined/100/2100E5/smart-home.png" width="45" alt="Seniors" style="display: block;">
+                  </td>
+                  <td style="padding: 25px; color: #ccc; font-size: 14px; line-height: 1.7; border-top-right-radius: 20px; border-bottom-right-radius: 20px;">
+                    <strong class="profile-title-tech">Líderes de la Experiencia (Hogar y Senior)</strong>
+                    Domina la tecnología para que trabaje a tu servicio. Descubre cómo la IA puede simplificar tus tareas diarias y gestionar tu bienestar con fluidez digital.
+                  </td>
+                </tr>
+              </table>
+
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+    <!-- [ SECCIÓN 5: PROGRAMA DETALLADO ] -->
+    <tr>
+      <td>
+        <table class="container" width="100%" cellpadding="40" cellspacing="0" border="0">
+          <tr>
+            <td>
+              <h2 class="tech-title" style="font-size: 22px; margin: 0 0 10px 0; text-align: center;">Programa IA Aplicada</h2>
+              <p style="color: #666; font-size: 13px; text-align: center; margin-bottom: 40px;">Un viaje de 3 encuentros para dominar el 2026.</p>
+
+              <div class="module-card">
+                <span style="background: #2100E5; color: #fff; padding: 4px 12px; border-radius: 4px; font-family: 'Orbitron', sans-serif; font-size: 10px; font-weight: bold;">17 ENE | 10:00 hs</span>
+                <h3 class="tech-title" style="color: #ffffff; font-size: 16px; margin: 15px 0 10px 0;">📍 BLOQUE 1: EL CIMIENTO INMERSIVO</h3>
+                <ul style="color: #ccc; font-size: 13px; line-height: 1.6; padding-left: 20px;">
+                  <li>Era Exponencial: IA como plataforma de valor.</li>
+                  <li>Configuración Pro: Personaliza ChatGPT.</li>
+                  <li>Prompt Engineering: Instrucciones precisas.</li>
+                  <li>Tu Primer Asistente: Entrenamiento con datos propios.</li>
+                </ul>
+              </div>
+
+              <div class="module-card">
+                <span style="background: rgba(154, 255, 95, 0.2); border: 1px solid #9AFF5F; color: #9AFF5F; padding: 4px 12px; border-radius: 4px; font-family: 'Orbitron', sans-serif; font-size: 10px; font-weight: bold;">24 ENE | 10:00 hs</span>
+                <h3 class="tech-title" style="color: #ffffff; font-size: 16px; margin: 15px 0 10px 0;">📍 BLOQUE 2: PODER AUDIOVISUAL</h3>
+                <ul style="color: #ccc; font-size: 13px; line-height: 1.6; padding-left: 20px;">
+                  <li>Laboratorio Multimedia: Imágenes, video y música.</li>
+                  <li>Diseño Exponencial: Websites y Presentaciones IA.</li>
+                  <li>Marketing Estratégico: Destacar en mercados saturados.</li>
+                </ul>
+              </div>
+
+              <div class="module-card" style="margin-bottom: 0;">
+                <span style="background: #2100E5; color: #fff; padding: 4px 12px; border-radius: 4px; font-family: 'Orbitron', sans-serif; font-size: 10px; font-weight: bold;">31 ENE | 10:00 hs</span>
+                <h3 class="tech-title" style="color: #ffffff; font-size: 16px; margin: 15px 0 10px 0;">📍 BLOQUE 3: EL FUTURO DEL TRABAJO</h3>
+                <ul style="color: #ccc; font-size: 13px; line-height: 1.6; padding-left: 20px;">
+                  <li>Presentaciones Pro: Gamma avanzado.</li>
+                  <li>Investigación Asistida: NotebookLM profundo.</li>
+                  <li>Business Intelligence: Análisis de datos con GenAI.</li>
+                </ul>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+    <!-- [ SECCIÓN DE EQUIPO DOCENTE ] -->
+    <tr>
+      <td>
+        <table class="container" width="100%" cellpadding="40" cellspacing="0" border="0">
+          <tr>
+            <td align="center">
+              <h2 class="tech-title" style="font-size: 20px; margin: 0 0 10px 0;">Equipo Docente</h2>
+              <p style="color: #888; font-size: 13px; margin-bottom: 35px;">Aprende junto a especialistas que simplifican lo complejo:</p>
+              
+              <!-- Ivana y Carolina -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td class="stack" width="250" align="center" valign="top">
+                    <div style="margin-bottom: 10px;">
+                      <img src="https://github.com/neurotechsoluciones-design/neurotech-assets/blob/main/Ivana.jpg?raw=true" width="100" height="100" class="docent-img" alt="Ivana">
+                    </div>
+                    <strong style="color: #ffffff; font-size: 14px; display: block;">Ivana Borlandelli</strong>
+                    <span style="color: #9AFF5F; font-size: 11px; text-transform: uppercase;">CEO & Estratega</span>
+                  </td>
+                  <td width="20" class="stack">&nbsp;</td>
+                  <td class="stack" width="250" align="center" valign="top">
+                    <div style="margin-bottom: 10px;">
+                      <img src="https://github.com/neurotechsoluciones-design/neurotech-assets/blob/main/Carolina.jpg?raw=true" width="100" height="100" class="docent-img" alt="Carolina">
+                    </div>
+                    <strong style="color: #ffffff; font-size: 14px; display: block;">Carolina PIA</strong>
+                    <span style="color: #9AFF5F; font-size: 11px; text-transform: uppercase;">Responsable de Capacitaciones</span>
+                  </td>
+                </tr>
+                <tr><td colspan="3" style="height: 30px;">&nbsp;</td></tr>
+                <!-- Romina y Gustavo -->
+                <tr>
+                  <td class="stack" width="250" align="center" valign="top">
+                    <div style="margin-bottom: 10px;">
+                      <img src="https://github.com/neurotechsoluciones-design/neurotech-assets/blob/main/Romina.jpg?raw=true" width="100" height="100" class="docent-img" alt="Romina">
+                    </div>
+                    <strong style="color: #ffffff; font-size: 14px; display: block;">Romina Pia</strong>
+                    <span style="color: #9AFF5F; font-size: 11px; text-transform: uppercase;">Formadora Especialista</span>
+                  </td>
+                  <td width="20" class="stack">&nbsp;</td>
+                  <td class="stack" width="250" align="center" valign="top">
+                    <div style="margin-bottom: 10px;">
+                      <img src="https://github.com/neurotechsoluciones-design/neurotech-assets/blob/main/Gustavo.jpg?raw=true" width="100" height="100" class="docent-img" alt="Gustavo">
+                    </div>
+                    <strong style="color: #ffffff; font-size: 14px; display: block;">Gustavo Amoros</strong>
+                    <span style="color: #9AFF5F; font-size: 11px; text-transform: uppercase;">Formador Especialista</span>
+                  </td>
+                </tr>
+                <tr><td colspan="3" style="height: 30px;">&nbsp;</td></tr>
+                <!-- Vanesa -->
+                <tr>
+                  <td colspan="3" align="center">
+                    <div style="margin-bottom: 10px;">
+                      <img src="https://github.com/neurotechsoluciones-design/neurotech-assets/blob/main/Vanesa.jpg?raw=true" width="100" height="100" class="docent-img" alt="Vanesa">
+                    </div>
+                    <strong style="color: #ffffff; font-size: 14px; display: block;">Vanesa Pia</strong>
+                    <span style="color: #9AFF5F; font-size: 11px; text-transform: uppercase;">Formadora Especialista</span>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+    <!-- [ SECCIÓN 6: METODOLOGÍA Y OFERTA FINAL ] -->
+    <tr>
+      <td>
+        <table class="container" width="100%" cellpadding="40" cellspacing="0" border="0">
+          <tr>
+            <td>
+              <div style="background: rgba(154, 255, 95, 0.05); border: 1px solid rgba(154, 255, 95, 0.2); border-radius: 16px; padding: 25px; margin-bottom: 30px;">
+                <h3 class="tech-title" style="font-size: 18px; margin: 0 0 10px 0;">Metodología: Inmersión Total</h3>
+                <p style="color: #eee; font-size: 14px; line-height: 1.6;">Espacio de entrenamiento presencial donde aplicaremos la IA a tus desafíos reales para llevarte soluciones funcionando.</p>
+              </div>
+
+              <div style="background-color: #000; border: 2px solid #9AFF5F; border-radius: 20px; padding: 35px; text-align: center; box-shadow: 0 0 25px rgba(154, 255, 95, 0.2);">
+                <p class="tech-title" style="font-size: 14px; margin-bottom: 20px;">Inversión y Cupo Exclusivo</p>
+                
+                <a href="https://www.google.com/maps/search/?api=1&query=Av.+El+Libertador+910,+San+Rafael,+Mendoza" target="_blank" style="color: #ffffff; text-decoration: none; font-size: 14px; font-weight: 600; display: block; margin-bottom: 10px;">
+                  📍 Av. El Libertador 910, Of. 1, Piso 1 (Google Maps)
+                </a>
+                
+                <p style="color: #888; font-size: 12px; margin-bottom: 25px;">📅 17, 24 y 31 de Enero | ⏰ 10:00 a 12:00 hs</p>
+                
+                <div style="background: rgba(33, 0, 229, 0.1); border: 1px solid #2100E5; display: inline-block; padding: 15px 30px; border-radius: 12px; margin-bottom: 30px;">
+                  <span style="color: #9AFF5F; font-family: 'Orbitron', sans-serif; font-size: 26px; font-weight: 700;">$55.000</span>
+                </div>
+
+                <a href="https://tally.so/r/1AdgPQ" style="background-color: #9AFF5F; color: #000000; padding: 20px 45px; text-decoration: none; border-radius: 50px; font-weight: 700; font-family: 'Orbitron', sans-serif; letter-spacing: 1px; display: block; box-shadow: 0 4px 15px rgba(154, 255, 95, 0.4);">RESERVAR MI LUGAR</a>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+    <!-- [ SECCIÓN 7: CONTACTO Y REDES SOCIALES ] -->
+    <tr>
+      <td style="padding: 0 0 50px 0;">
+        <table width="100%" cellpadding="0" cellspacing="0" border="0" style="text-align: center;">
+          <tr>
+            <td align="center">
+              <table cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td style="padding: 0 15px;">
+                    <a href="https://wa.me/5492604087086?text=Hola%20NeuroTech%20Soluciones!%20Me%20interesa%20inscribirme%20en%20el%20curso%20de%20IA%20Aplicada." style="text-decoration: none;">
+                      <img src="https://img.icons8.com/color/96/whatsapp--v1.png" width="40" alt="WhatsApp">
+                    </a>
+                  </td>
+                  <td style="padding: 0 15px;">
+                    <a href="https://www.instagram.com/neurotech.soluciones/" style="text-decoration: none;">
+                      <img src="https://img.icons8.com/color/96/instagram-new--v1.png" width="40" alt="Instagram">
+                    </a>
+                  </td>
+                  <td style="padding: 0 15px;">
+                    <a href="https://www.youtube.com/@neurotech-soluciones" style="text-decoration: none;">
+                      <img src="https://img.icons8.com/color/96/youtube-play.png" width="40" alt="YouTube">
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding-top: 30px; color: #888; font-size: 12px; line-height: 1.6;">
+              📧 info@neurotechsoluciones.com<br>
+              <strong>NeuroTech Academy | San Rafael, Mendoza</strong><br>
+              © 2026. Todos los derechos reservados.
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+  </table>
+</center>
+</body>
+</html>
