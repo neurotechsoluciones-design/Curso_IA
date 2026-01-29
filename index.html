@@ -133,41 +133,36 @@
   <div class="fixed inset-0 bg-gradient-to-b from-transparent via-neuro-black/50 to-neuro-black pointer-events-none z-[-1]"></div>
 
   <!-- [ SECCIÓN 1: HERO FULL SCREEN ] -->
-  <!-- MODIFICACIÓN: Altura reducida (h-[50vh]) para mejor UX -->
-  <header class="w-full h-[50vh] md:h-[60vh] relative overflow-hidden mb-10 group">
-    <!-- Imagen Hero Full Screen -->
+  <header class="w-full h-[40vh] md:h-[60vh] relative overflow-hidden mb-6 group">
     <div class="absolute inset-0 z-0">
-        <!-- CORRECCIÓN: Imagen centrada (object-center) para evitar cortes -->
         <img src="https://github.com/neurotechsoluciones-design/neurotech-assets/blob/main/logo_neurotech_hero.png?raw=true" 
              alt="NeuroTech Academy" 
              class="w-full h-full object-cover object-center opacity-100">
-        
-        <!-- Degradado inferior para fusión suave -->
         <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-neuro-black"></div>
     </div>
   </header>
 
-  <main class="max-w-4xl mx-auto px-4 space-y-16 relative z-10 -mt-20">
+  <main class="max-w-4xl mx-auto px-4 space-y-12 md:space-y-16 relative z-10 -mt-16 md:-mt-20">
 
     <!-- [ SECCIÓN 2: HERO TEXTO ] -->
-    <section class="text-center space-y-8 animate-fade-in-up">
-      <div class="inline-block px-4 py-1.5 rounded-full border border-neuro-green/30 bg-neuro-green/10 text-neuro-green text-[10px] font-orbitron tracking-widest uppercase mb-4 shadow-[0_0_10px_rgba(154,255,95,0.2)]">
+    <section class="text-center space-y-6 md:space-y-8 animate-fade-in-up">
+      <div class="inline-block px-4 py-1.5 rounded-full border border-neuro-green/30 bg-neuro-green/10 text-neuro-green text-[9px] md:text-[10px] font-orbitron tracking-widest uppercase mb-2 shadow-[0_0_10px_rgba(154,255,95,0.2)]">
         Inscripciones Abiertas
       </div>
       
-      <h1 class="text-4xl md:text-6xl font-orbitron font-black leading-tight tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-neuro-green via-white to-neuro-green animate-text-shimmer bg-[length:200%_auto]">
-        Curso Inteligencia <br> Artificial Aplicada
+      <h1 class="text-3xl md:text-6xl font-orbitron font-black leading-tight tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-neuro-green via-white to-neuro-green animate-text-shimmer bg-[length:200%_auto]">
+        Curso Inteligencia <br class="hidden md:block"> Artificial Aplicada
       </h1>
       
-      <p class="text-gray-300 text-lg md:text-xl max-w-2xl mx-auto font-light leading-relaxed">
+      <p class="text-gray-300 text-base md:text-xl max-w-2xl mx-auto font-light leading-relaxed px-2">
         No es solo usar una herramienta; es aprender a <span class="text-neuro-green font-bold">hablar el lenguaje de la IA</span> para transformar tu profesión y optimizar tu negocio.
       </p>
 
-      <div class="pt-4">
-        <!-- MODIFICACIÓN: Botón más compacto (py-3 px-8 text-base) -->
-        <a href="https://tally.so/r/1AdgPQ" target="_blank" class="btn-cyber inline-flex items-center justify-center gap-3 bg-neuro-green text-black font-orbitron font-bold text-base py-3 px-8 rounded-full shadow-[0_0_20px_rgba(154,255,95,0.5)] hover:shadow-[0_0_40px_rgba(154,255,95,0.8)] hover:scale-105 transition-transform">
+      <div class="pt-2">
+        <!-- MODIFICACIÓN: CTA Inicio más compacto -->
+        <a href="https://tally.so/r/1AdgPQ" target="_blank" class="btn-cyber inline-flex items-center justify-center gap-3 bg-neuro-green text-black font-orbitron font-bold text-sm md:text-base py-2.5 px-6 md:py-3 md:px-8 rounded-full shadow-[0_0_20px_rgba(154,255,95,0.5)] hover:shadow-[0_0_40px_rgba(154,255,95,0.8)] hover:scale-105 transition-transform">
           <span>INSCRIBIRME AHORA</span>
-          <i data-lucide="arrow-right" class="w-5 h-5"></i>
+          <i data-lucide="arrow-right" class="w-4 h-4 md:w-5 md:h-5"></i>
         </a>
       </div>
     </section>
@@ -176,32 +171,32 @@
     <section class="relative animate-fade-in-up">
       <div class="absolute inset-0 bg-[url('https://github.com/neurotechsoluciones-design/neurotech-assets/blob/main/fondo_seccion3.png?raw=true')] bg-cover bg-right opacity-20 rounded-3xl z-0"></div>
       
-      <div class="relative z-10 glass-panel rounded-3xl p-8 border-neuro-blue/30">
-        <h2 class="text-2xl font-orbitron font-bold text-center mb-10 text-white drop-shadow-md">¿Qué logras en 3 encuentros?</h2>
+      <div class="relative z-10 glass-panel rounded-3xl p-6 md:p-8 border-neuro-blue/30">
+        <h2 class="text-xl md:text-2xl font-orbitron font-bold text-center mb-8 md:mb-10 text-white drop-shadow-md">¿Qué logras en 3 encuentros?</h2>
         
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div class="glass-panel p-6 rounded-2xl bg-black/40 border border-neuro-blue/30 hover:bg-neuro-blue/10">
-            <div class="inline-block px-3 py-1 bg-neuro-blue/20 border border-neuro-blue text-white text-[10px] font-orbitron font-bold rounded mb-3">PASO 01</div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+          <div class="glass-panel p-5 md:p-6 rounded-2xl bg-black/40 border border-neuro-blue/30 hover:bg-neuro-blue/10">
+            <div class="inline-block px-3 py-1 bg-neuro-blue/20 border border-neuro-blue text-white text-[9px] font-orbitron font-bold rounded mb-3">PASO 01</div>
             <h3 class="text-neuro-green font-orbitron font-bold text-sm mb-2">Instrucciones</h3>
-            <p class="text-gray-300 text-sm leading-relaxed">Domina el arte de dar órdenes para que la IA te entienda a la primera.</p>
+            <p class="text-gray-300 text-xs md:text-sm leading-relaxed">Domina el arte de dar órdenes para que la IA te entienda a la primera.</p>
           </div>
           
-          <div class="glass-panel p-6 rounded-2xl bg-black/40 border border-neuro-green/30 hover:bg-neuro-green/10">
-            <div class="inline-block px-3 py-1 bg-neuro-green/10 border border-neuro-green text-neuro-green text-[10px] font-orbitron font-bold rounded mb-3">PASO 02</div>
+          <div class="glass-panel p-5 md:p-6 rounded-2xl bg-black/40 border border-neuro-green/30 hover:bg-neuro-green/10">
+            <div class="inline-block px-3 py-1 bg-neuro-green/10 border border-neuro-green text-neuro-green text-[9px] font-orbitron font-bold rounded mb-3">PASO 02</div>
             <h3 class="text-white font-orbitron font-bold text-sm mb-2">Gemelo Digital</h3>
-            <p class="text-gray-300 text-sm leading-relaxed">Entrena a la IA con tu voz de marca para redactar con tu esencia.</p>
+            <p class="text-gray-300 text-xs md:text-sm leading-relaxed">Entrena a la IA con tu voz de marca para redactar con tu esencia.</p>
           </div>
 
-          <div class="glass-panel p-6 rounded-2xl bg-black/40 border border-neuro-green/30 hover:bg-neuro-green/10">
-            <div class="inline-block px-3 py-1 bg-neuro-green/10 border border-neuro-green text-neuro-green text-[10px] font-orbitron font-bold rounded mb-3">PASO 03</div>
+          <div class="glass-panel p-5 md:p-6 rounded-2xl bg-black/40 border border-neuro-green/30 hover:bg-neuro-green/10">
+            <div class="inline-block px-3 py-1 bg-neuro-green/10 border border-neuro-green text-neuro-green text-[9px] font-orbitron font-bold rounded mb-3">PASO 03</div>
             <h3 class="text-white font-orbitron font-bold text-sm mb-2">Asistente Ventas</h3>
-            <p class="text-gray-300 text-sm leading-relaxed">Configura un experto que atienda tus clientes en segundos.</p>
+            <p class="text-gray-300 text-xs md:text-sm leading-relaxed">Configura un experto que atienda tus clientes en segundos.</p>
           </div>
 
-          <div class="glass-panel p-6 rounded-2xl bg-black/40 border border-neuro-blue/30 hover:bg-neuro-blue/10">
-            <div class="inline-block px-3 py-1 bg-neuro-blue/20 border border-neuro-blue text-white text-[10px] font-orbitron font-bold rounded mb-3">PASO 04</div>
+          <div class="glass-panel p-5 md:p-6 rounded-2xl bg-black/40 border border-neuro-blue/30 hover:bg-neuro-blue/10">
+            <div class="inline-block px-3 py-1 bg-neuro-blue/20 border border-neuro-blue text-white text-[9px] font-orbitron font-bold rounded mb-3">PASO 04</div>
             <h3 class="text-neuro-green font-orbitron font-bold text-sm mb-2">Web Tools</h3>
-            <p class="text-gray-300 text-sm leading-relaxed">Desarrolla herramientas interactivas sin escribir una sola línea de código.</p>
+            <p class="text-gray-300 text-xs md:text-sm leading-relaxed">Desarrolla herramientas interactivas sin escribir una sola línea de código.</p>
           </div>
         </div>
       </div>
@@ -209,66 +204,66 @@
 
     <!-- [ SECCIÓN 4: PÚBLICO OBJETIVO ] -->
     <section class="animate-fade-in-up">
-      <h2 class="text-2xl font-orbitron font-bold text-center mb-8 text-neuro-green">¿Para quién es este curso?</h2>
+      <h2 class="text-xl md:text-2xl font-orbitron font-bold text-center mb-8 text-neuro-green">¿Para quién es este curso?</h2>
       
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div class="glass-panel rounded-2xl p-6 flex items-start gap-4 group hover:border-neuro-green/50">
-          <div class="bg-neuro-green/10 p-3 rounded-xl border border-neuro-green/30 group-hover:scale-110 transition-transform">
-            <img src="https://img.icons8.com/m_outlined/100/9AFF5F/rocket.png" width="30" alt="Emprendedores">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+        <div class="glass-panel rounded-2xl p-5 md:p-6 flex items-start gap-4 group hover:border-neuro-green/50">
+          <div class="bg-neuro-green/10 p-3 rounded-xl border border-neuro-green/30 group-hover:scale-110 transition-transform flex-shrink-0">
+            <img src="https://img.icons8.com/m_outlined/100/9AFF5F/rocket.png" width="24" class="md:w-[30px]" alt="Emprendedores">
           </div>
           <div>
-            <strong class="block text-neuro-green font-orbitron text-sm mb-2 uppercase tracking-wide">Emprendedores y Dueños</strong>
-            <p class="text-gray-400 text-xs leading-relaxed">Ideales para quienes buscan impulsar un negocio desde cero o escalar uno existente. Aprenderás a automatizar tu web y marketing.</p>
+            <strong class="block text-neuro-green font-orbitron text-xs md:text-sm mb-2 uppercase tracking-wide">Emprendedores y Dueños</strong>
+            <p class="text-gray-400 text-[11px] md:text-xs leading-relaxed">Ideales para quienes buscan impulsar un negocio desde cero o escalar uno existente. Aprenderás a automatizar tu web y marketing.</p>
           </div>
         </div>
 
-        <div class="glass-panel rounded-2xl p-6 flex items-start gap-4 group hover:border-neuro-blue/50">
-          <div class="bg-neuro-blue/10 p-3 rounded-xl border border-neuro-blue/30 group-hover:scale-110 transition-transform">
-            <img src="https://img.icons8.com/m_outlined/100/2100E5/code.png" width="30" alt="Técnicos">
+        <div class="glass-panel rounded-2xl p-5 md:p-6 flex items-start gap-4 group hover:border-neuro-blue/50">
+          <div class="bg-neuro-blue/10 p-3 rounded-xl border border-neuro-blue/30 group-hover:scale-110 transition-transform flex-shrink-0">
+            <img src="https://img.icons8.com/m_outlined/100/2100E5/code.png" width="24" class="md:w-[30px]" alt="Técnicos">
           </div>
           <div>
-            <strong class="block text-neuro-blue-light font-orbitron text-sm mb-2 uppercase tracking-wide">Técnicos y Analistas</strong>
-            <p class="text-gray-400 text-xs leading-relaxed">Profesionales que manejan datos complejos. Dominarás la programación por IA para crear herramientas personalizadas.</p>
+            <strong class="block text-neuro-blue-light font-orbitron text-xs md:text-sm mb-2 uppercase tracking-wide">Técnicos y Analistas</strong>
+            <p class="text-gray-400 text-[11px] md:text-xs leading-relaxed">Profesionales que manejan datos complejos. Dominarás la programación por IA para crear herramientas personalizadas.</p>
           </div>
         </div>
 
-        <div class="glass-panel rounded-2xl p-6 flex items-start gap-4 group hover:border-neuro-green/50">
-          <div class="bg-neuro-green/10 p-3 rounded-xl border border-neuro-green/30 group-hover:scale-110 transition-transform">
-            <img src="https://img.icons8.com/m_outlined/100/9AFF5F/globe.png" width="30" alt="Turismo">
+        <div class="glass-panel rounded-2xl p-5 md:p-6 flex items-start gap-4 group hover:border-neuro-green/50">
+          <div class="bg-neuro-green/10 p-3 rounded-xl border border-neuro-green/30 group-hover:scale-110 transition-transform flex-shrink-0">
+            <img src="https://img.icons8.com/m_outlined/100/9AFF5F/globe.png" width="24" class="md:w-[30px]" alt="Turismo">
           </div>
           <div>
-            <strong class="block text-neuro-green font-orbitron text-sm mb-2 uppercase tracking-wide">Turismo y Comercio Local</strong>
-            <p class="text-gray-400 text-xs leading-relaxed">Estrategias de marketing turístico y atención al cliente que te diferencien en el mercado receptivo.</p>
+            <strong class="block text-neuro-green font-orbitron text-xs md:text-sm mb-2 uppercase tracking-wide">Turismo y Comercio Local</strong>
+            <p class="text-gray-400 text-[11px] md:text-xs leading-relaxed">Estrategias de marketing turístico y atención al cliente que te diferencien en el mercado receptivo.</p>
           </div>
         </div>
 
-        <div class="glass-panel rounded-2xl p-6 flex items-start gap-4 group hover:border-neuro-blue/50">
-          <div class="bg-neuro-blue/10 p-3 rounded-xl border border-neuro-blue/30 group-hover:scale-110 transition-transform">
-            <img src="https://img.icons8.com/m_outlined/100/2100E5/paint-brush.png" width="30" alt="Creativos">
+        <div class="glass-panel rounded-2xl p-5 md:p-6 flex items-start gap-4 group hover:border-neuro-blue/50">
+          <div class="bg-neuro-blue/10 p-3 rounded-xl border border-neuro-blue/30 group-hover:scale-110 transition-transform flex-shrink-0">
+            <img src="https://img.icons8.com/m_outlined/100/2100E5/paint-brush.png" width="24" class="md:w-[30px]" alt="Creativos">
           </div>
           <div>
-            <strong class="block text-neuro-blue-light font-orbitron text-sm mb-2 uppercase tracking-wide">Creativos y Artistas</strong>
-            <p class="text-gray-400 text-xs leading-relaxed">Evoluciona tu estilo. Utilizarás la IA como un colaborador creativo y expandirás tus límites.</p>
+            <strong class="block text-neuro-blue-light font-orbitron text-xs md:text-sm mb-2 uppercase tracking-wide">Creativos y Artistas</strong>
+            <p class="text-gray-400 text-[11px] md:text-xs leading-relaxed">Evoluciona tu estilo. Utilizarás la IA como un colaborador creativo y expandirás tus límites.</p>
           </div>
         </div>
 
-        <div class="glass-panel rounded-2xl p-6 flex items-start gap-4 group hover:border-neuro-green/50">
-          <div class="bg-neuro-green/10 p-3 rounded-xl border border-neuro-green/30 group-hover:scale-110 transition-transform">
-            <img src="https://img.icons8.com/m_outlined/100/9AFF5F/graduation-cap.png" width="30" alt="Educación">
+        <div class="glass-panel rounded-2xl p-5 md:p-6 flex items-start gap-4 group hover:border-neuro-green/50">
+          <div class="bg-neuro-green/10 p-3 rounded-xl border border-neuro-green/30 group-hover:scale-110 transition-transform flex-shrink-0">
+            <img src="https://img.icons8.com/m_outlined/100/9AFF5F/graduation-cap.png" width="24" class="md:w-[30px]" alt="Educación">
           </div>
           <div>
-            <strong class="block text-neuro-green font-orbitron text-sm mb-2 uppercase tracking-wide">Educación y Salud</strong>
-            <p class="text-gray-400 text-xs leading-relaxed">Optimizar tareas clínicas o administrativas sin reemplazar el vínculo humano, usando la IA como complemento.</p>
+            <strong class="block text-neuro-green font-orbitron text-xs md:text-sm mb-2 uppercase tracking-wide">Educación y Salud</strong>
+            <p class="text-gray-400 text-[11px] md:text-xs leading-relaxed">Optimizar tareas clínicas o administrativas sin reemplazar el vínculo humano, usando la IA como complemento.</p>
           </div>
         </div>
 
-        <div class="glass-panel rounded-2xl p-6 flex items-start gap-4 group hover:border-neuro-blue/50">
-          <div class="bg-neuro-blue/10 p-3 rounded-xl border border-neuro-blue/30 group-hover:scale-110 transition-transform">
-            <img src="https://img.icons8.com/m_outlined/100/2100E5/home-automation.png" width="30" alt="Seniors">
+        <div class="glass-panel rounded-2xl p-5 md:p-6 flex items-start gap-4 group hover:border-neuro-blue/50">
+          <div class="bg-neuro-blue/10 p-3 rounded-xl border border-neuro-blue/30 group-hover:scale-110 transition-transform flex-shrink-0">
+            <img src="https://img.icons8.com/m_outlined/100/2100E5/home-automation.png" width="24" class="md:w-[30px]" alt="Seniors">
           </div>
           <div>
-            <strong class="block text-neuro-blue-light font-orbitron text-sm mb-2 uppercase tracking-wide">Líderes de la Experiencia</strong>
-            <p class="text-gray-400 text-xs leading-relaxed">Descubre cómo la IA puede simplificar tus tareas diarias y gestionar tu bienestar con fluidez digital.</p>
+            <strong class="block text-neuro-blue-light font-orbitron text-xs md:text-sm mb-2 uppercase tracking-wide">Líderes de la Experiencia</strong>
+            <p class="text-gray-400 text-[11px] md:text-xs leading-relaxed">Descubre cómo la IA puede simplificar tus tareas diarias y gestionar tu bienestar con fluidez digital.</p>
           </div>
         </div>
       </div>
@@ -278,15 +273,15 @@
     <section class="relative animate-fade-in-up">
        <div class="absolute inset-0 bg-[url('https://github.com/neurotechsoluciones-design/neurotech-assets/blob/main/fondo_seccion3.png?raw=true')] bg-cover bg-left opacity-10 rounded-3xl z-0"></div>
        
-       <div class="relative z-10 glass-panel rounded-3xl p-8 border-neuro-blue/30">
-         <h2 class="text-2xl font-orbitron font-bold text-center text-white mb-2">Programa IA Aplicada de 0 a 100</h2>
-         <p class="text-neuro-green text-center text-xs font-bold uppercase tracking-widest mb-10">Un viaje de 3 encuentros para dominar el 2026</p>
+       <div class="relative z-10 glass-panel rounded-3xl p-6 md:p-8 border-neuro-blue/30">
+         <h2 class="text-xl md:text-2xl font-orbitron font-bold text-center text-white mb-2">Programa IA Aplicada de 0 a 100</h2>
+         <p class="text-neuro-green text-center text-[10px] font-bold uppercase tracking-widest mb-8 md:mb-10">Un viaje de 3 encuentros para dominar el 2026</p>
 
-         <div class="space-y-6">
-           <div class="glass-panel p-6 rounded-2xl bg-white/5 hover:border-neuro-blue transition-colors">
-             <span class="bg-neuro-blue text-white text-[10px] font-orbitron font-bold px-3 py-1 rounded">Clase 1</span>
-             <h3 class="text-neuro-green font-orbitron font-bold text-lg mt-3 mb-2">EL CIMIENTO INMERSIVO</h3>
-             <ul class="text-gray-300 text-sm space-y-2 list-disc pl-5 marker:text-neuro-blue">
+         <div class="space-y-4 md:space-y-6">
+           <div class="glass-panel p-5 md:p-6 rounded-2xl bg-white/5 hover:border-neuro-blue transition-colors">
+             <span class="bg-neuro-blue text-white text-[9px] font-orbitron font-bold px-3 py-1 rounded">Clase 1</span>
+             <h3 class="text-neuro-green font-orbitron font-bold text-base md:text-lg mt-3 mb-2">EL CIMIENTO INMERSIVO</h3>
+             <ul class="text-gray-300 text-xs md:text-sm space-y-2 list-disc pl-5 marker:text-neuro-blue">
                <li>Era Exponencial: IA como plataforma de valor.</li>
                <li>Configuración Pro: Personaliza ChatGPT.</li>
                <li>Prompt Engineering: Instrucciones precisas.</li>
@@ -294,20 +289,20 @@
              </ul>
            </div>
 
-           <div class="glass-panel p-6 rounded-2xl bg-white/5 hover:border-neuro-green transition-colors">
-             <span class="bg-neuro-green/20 border border-neuro-green text-neuro-green text-[10px] font-orbitron font-bold px-3 py-1 rounded">Clase 2</span>
-             <h3 class="text-neuro-green font-orbitron font-bold text-lg mt-3 mb-2">PODER AUDIOVISUAL</h3>
-             <ul class="text-gray-300 text-sm space-y-2 list-disc pl-5 marker:text-neuro-green">
+           <div class="glass-panel p-5 md:p-6 rounded-2xl bg-white/5 hover:border-neuro-green transition-colors">
+             <span class="bg-neuro-green/20 border border-neuro-green text-neuro-green text-[9px] font-orbitron font-bold px-3 py-1 rounded">Clase 2</span>
+             <h3 class="text-neuro-green font-orbitron font-bold text-base md:text-lg mt-3 mb-2">PODER AUDIOVISUAL</h3>
+             <ul class="text-gray-300 text-xs md:text-sm space-y-2 list-disc pl-5 marker:text-neuro-green">
                <li>Laboratorio Multimedia: Imágenes, video y música.</li>
                <li>Investigación Asistida: NotebookLM profundo.</li>
                <li>Marketing Estratégico: Destacar en mercados saturados.</li>
              </ul>
            </div>
 
-           <div class="glass-panel p-6 rounded-2xl bg-white/5 hover:border-neuro-blue transition-colors">
-             <span class="bg-neuro-blue text-white text-[10px] font-orbitron font-bold px-3 py-1 rounded">Clase 3</span>
-             <h3 class="text-neuro-green font-orbitron font-bold text-lg mt-3 mb-2">EL FUTURO DEL TRABAJO</h3>
-             <ul class="text-gray-300 text-sm space-y-2 list-disc pl-5 marker:text-neuro-blue">
+           <div class="glass-panel p-5 md:p-6 rounded-2xl bg-white/5 hover:border-neuro-blue transition-colors">
+             <span class="bg-neuro-blue text-white text-[9px] font-orbitron font-bold px-3 py-1 rounded">Clase 3</span>
+             <h3 class="text-neuro-green font-orbitron font-bold text-base md:text-lg mt-3 mb-2">EL FUTURO DEL TRABAJO</h3>
+             <ul class="text-gray-300 text-xs md:text-sm space-y-2 list-disc pl-5 marker:text-neuro-blue">
                <li>Presentaciones Pro: Websites y Diseño de Presentaciones IA.</li>
                <li>GPT Projects: De la consulta reactiva al sistema de pensamiento estratégico.</li>
                <li>Business Intelligence: Configuración de instrucciones fijas y decisiones consistentes.</li>
@@ -319,94 +314,94 @@
 
     <!-- [ SECCIÓN 6: EQUIPO DOCENTE ] -->
     <section class="animate-fade-in-up text-center">
-      <h2 class="text-2xl font-orbitron font-bold mb-3">Equipo Docente</h2>
-      <p class="text-gray-400 text-sm mb-8">Aprende junto a especialistas que simplifican lo complejo:</p>
+      <h2 class="text-xl md:text-2xl font-orbitron font-bold mb-3">Equipo Docente</h2>
+      <p class="text-gray-400 text-xs md:text-sm mb-8">Aprende junto a especialistas que simplifican lo complejo:</p>
       
-      <!-- Flex Grid Ajustado para evitar cortes en títulos largos -->
-      <div class="flex flex-wrap justify-center gap-8">
+      <!-- Flex Grid Ajustado - 2 columnas en móvil, 5 en escritorio para evitar amontonamiento -->
+      <div class="grid grid-cols-2 md:flex md:flex-wrap md:justify-center gap-6 md:gap-8">
         <!-- Ivana -->
-        <div class="group w-40">
-          <div class="w-24 h-24 mx-auto rounded-full p-1 border-2 border-neuro-blue group-hover:border-neuro-green transition-colors overflow-hidden">
+        <div class="group">
+          <div class="w-20 h-20 md:w-24 md:h-24 mx-auto rounded-full p-1 border-2 border-neuro-blue group-hover:border-neuro-green transition-colors overflow-hidden">
             <img src="https://github.com/neurotechsoluciones-design/neurotech-assets/blob/main/Ivana.jpg?raw=true" class="w-full h-full object-cover rounded-full" alt="Ivana">
           </div>
-          <strong class="block text-white mt-3 text-sm">Ivana Borlandelli</strong>
-          <span class="text-[10px] text-neuro-green uppercase font-bold tracking-wider">CEO & Estratega</span>
+          <strong class="block text-white mt-3 text-xs md:text-sm">Ivana Borlandelli</strong>
+          <!-- Títulos agregados según imagen -->
+          <span class="text-[9px] text-neuro-blue-light block font-semibold mb-1">Ingeniera</span>
+          <span class="text-[9px] text-neuro-green uppercase font-bold tracking-wider leading-tight">CEO & Estratega</span>
         </div>
 
         <!-- Carolina -->
-        <div class="group w-40">
-          <div class="w-24 h-24 mx-auto rounded-full p-1 border-2 border-neuro-blue group-hover:border-neuro-green transition-colors overflow-hidden">
+        <div class="group">
+          <div class="w-20 h-20 md:w-24 md:h-24 mx-auto rounded-full p-1 border-2 border-neuro-blue group-hover:border-neuro-green transition-colors overflow-hidden">
             <img src="https://github.com/neurotechsoluciones-design/neurotech-assets/blob/main/Carolina.jpg?raw=true" class="w-full h-full object-cover rounded-full" alt="Carolina">
           </div>
-          <strong class="block text-white mt-3 text-sm">Carolina PIA</strong>
-          <!-- CORRECCIÓN: Título Completo -->
-          <span class="text-[10px] text-neuro-green uppercase font-bold tracking-wider block leading-tight mt-1">Responsable de Capacitaciones</span>
+          <strong class="block text-white mt-3 text-xs md:text-sm">Carolina PIA</strong>
+          <span class="text-[9px] text-neuro-blue-light block font-semibold mb-1">Magister</span>
+          <span class="text-[9px] text-neuro-green uppercase font-bold tracking-wider block leading-tight max-w-[100px] mx-auto">Responsable de Capacitaciones</span>
         </div>
 
         <!-- Romina -->
-        <div class="group w-40">
-          <div class="w-24 h-24 mx-auto rounded-full p-1 border-2 border-neuro-blue group-hover:border-neuro-green transition-colors overflow-hidden">
+        <div class="group">
+          <div class="w-20 h-20 md:w-24 md:h-24 mx-auto rounded-full p-1 border-2 border-neuro-blue group-hover:border-neuro-green transition-colors overflow-hidden">
             <img src="https://github.com/neurotechsoluciones-design/neurotech-assets/blob/main/Romina.jpg?raw=true" class="w-full h-full object-cover rounded-full" alt="Romina">
           </div>
-          <strong class="block text-white mt-3 text-sm">Romina Pia</strong>
-          <!-- CORRECCIÓN: Título Completo -->
-          <span class="text-[10px] text-neuro-green uppercase font-bold tracking-wider block leading-tight mt-1">Formadora Especialista</span>
+          <strong class="block text-white mt-3 text-xs md:text-sm">Romina Pia</strong>
+          <span class="text-[9px] text-neuro-blue-light block font-semibold mb-1">Abogada</span>
+          <span class="text-[9px] text-neuro-green uppercase font-bold tracking-wider block leading-tight max-w-[100px] mx-auto">Formadora Especialista</span>
         </div>
 
         <!-- Gustavo -->
-        <div class="group w-40">
-          <div class="w-24 h-24 mx-auto rounded-full p-1 border-2 border-neuro-blue group-hover:border-neuro-green transition-colors overflow-hidden">
+        <div class="group">
+          <div class="w-20 h-20 md:w-24 md:h-24 mx-auto rounded-full p-1 border-2 border-neuro-blue group-hover:border-neuro-green transition-colors overflow-hidden">
             <img src="https://github.com/neurotechsoluciones-design/neurotech-assets/blob/main/Gustavo.jpg?raw=true" class="w-full h-full object-cover rounded-full" alt="Gustavo">
           </div>
-          <strong class="block text-white mt-3 text-sm">Gustavo Amoros</strong>
-          <!-- CORRECCIÓN: Título Completo -->
-          <span class="text-[10px] text-neuro-green uppercase font-bold tracking-wider block leading-tight mt-1">Formador Especialista</span>
+          <strong class="block text-white mt-3 text-xs md:text-sm">Gustavo Amoros</strong>
+          <span class="text-[9px] text-neuro-blue-light block font-semibold mb-1">Contador</span>
+          <span class="text-[9px] text-neuro-green uppercase font-bold tracking-wider block leading-tight max-w-[100px] mx-auto">Formador Especialista</span>
         </div>
 
         <!-- Vanesa -->
-        <div class="group w-40">
-          <div class="w-24 h-24 mx-auto rounded-full p-1 border-2 border-neuro-blue group-hover:border-neuro-green transition-colors overflow-hidden">
+        <div class="group col-span-2 md:col-span-1">
+          <div class="w-20 h-20 md:w-24 md:h-24 mx-auto rounded-full p-1 border-2 border-neuro-blue group-hover:border-neuro-green transition-colors overflow-hidden">
             <img src="https://github.com/neurotechsoluciones-design/neurotech-assets/blob/main/Vanesa.jpg?raw=true" class="w-full h-full object-cover rounded-full" alt="Vanesa">
           </div>
-          <strong class="block text-white mt-3 text-sm">Vanesa Pia</strong>
-          <!-- CORRECCIÓN: Título Completo -->
-          <span class="text-[10px] text-neuro-green uppercase font-bold tracking-wider block leading-tight mt-1">Formadora Especialista</span>
+          <strong class="block text-white mt-3 text-xs md:text-sm">Vanesa Pia</strong>
+          <span class="text-[9px] text-neuro-blue-light block font-semibold mb-1">Lic. en Administración</span>
+          <span class="text-[9px] text-neuro-green uppercase font-bold tracking-wider block leading-tight max-w-[100px] mx-auto">Formadora Especialista</span>
         </div>
       </div>
     </section>
 
     <!-- [ SECCIÓN 7: OFERTA FINAL ] -->
     <section class="animate-fade-in-up">
-      <!-- CORRECCIÓN: Eliminado degradado, ahora es BORDE SÓLIDO -->
-      <div class="glass-panel rounded-3xl p-[2px] bg-neuro-green border-none shadow-[0_0_25px_rgba(154,255,95,0.2)]">
-        <div class="bg-black rounded-[22px] p-10 text-center relative overflow-hidden">
-          <!-- Brillo de fondo sutil -->
+      <div class="glass-panel rounded-3xl p-[1px] bg-neuro-green border-none shadow-[0_0_25px_rgba(154,255,95,0.2)]">
+        <div class="bg-black rounded-[23px] p-8 md:p-10 text-center relative overflow-hidden">
           <div class="absolute inset-0 bg-neuro-green/5 opacity-50"></div>
           
           <div class="relative z-10">
-            <h3 class="text-2xl font-orbitron font-bold text-white mb-4">Inversión y Cupo Exclusivo</h3>
-            <p class="text-gray-400 text-sm max-w-lg mx-auto mb-6">
+            <h3 class="text-xl md:text-2xl font-orbitron font-bold text-white mb-4">Inversión y Cupo Exclusivo</h3>
+            <p class="text-gray-400 text-xs md:text-sm max-w-lg mx-auto mb-6">
               Para garantizar la calidad educativa y el soporte personalizado que nos caracteriza, los <strong>cupos son estrictamente limitados</strong>.
             </p>
 
-            <a href="https://www.google.com/maps/search/?api=1&query=Av.+El+Libertador+910,+San+Rafael,+Mendoza" target="_blank" class="flex items-center justify-center gap-2 text-white hover:text-neuro-green transition-colors text-sm font-semibold mb-6">
-              <i data-lucide="map-pin" class="w-4 h-4"></i>
+            <a href="https://www.google.com/maps/search/?api=1&query=Av.+El+Libertador+910,+San+Rafael,+Mendoza" target="_blank" class="flex items-center justify-center gap-2 text-white hover:text-neuro-green transition-colors text-[11px] md:text-sm font-semibold mb-6">
+              <i data-lucide="map-pin" class="w-3 h-3 md:w-4 md:h-4"></i>
               📍 Av. El Libertador 910, Of. 1, Piso 1 (Ver Mapa)
             </a>
 
             <!-- Precio -->
-            <div class="inline-block bg-neuro-blue/10 border border-neuro-blue px-8 py-4 rounded-2xl mb-6 shadow-[0_0_20px_rgba(33,0,229,0.2)]">
-              <span class="text-5xl font-orbitron font-bold text-neuro-green tracking-tight">$55.000</span>
-              <p class="text-gray-400 text-[10px] uppercase tracking-[0.2em] mt-2">Valor Total del Curso</p>
+            <div class="inline-block bg-neuro-blue/10 border border-neuro-blue px-6 py-3 md:px-8 md:py-4 rounded-2xl mb-6 shadow-[0_0_20px_rgba(33,0,229,0.2)]">
+              <span class="text-4xl md:text-5xl font-orbitron font-bold text-neuro-green tracking-tight">$55.000</span>
+              <p class="text-gray-400 text-[8px] md:text-[10px] uppercase tracking-[0.2em] mt-2">Valor Total del Curso</p>
             </div>
 
-            <p class="text-white text-sm mb-8">
-              Asegurá tu vacante hoy con una inscripción anticipada de <span class="text-neuro-green font-bold text-lg">$15.000</span>.<br>
-              <span class="text-xs text-gray-500">(Este monto se descuenta del total final del curso).</span>
+            <p class="text-white text-xs md:text-sm mb-8">
+              Asegurá tu vacante hoy con una inscripción anticipada de <span class="text-neuro-green font-bold text-base md:text-lg">$15.000</span>.<br>
+              <span class="text-[10px] md:text-xs text-gray-500">(Este monto se descuenta del total final del curso).</span>
             </p>
 
-            <!-- MODIFICACIÓN: Botón más compacto (py-3 px-8 text-base) -->
-            <a href="https://tally.so/r/1AdgPQ" target="_blank" class="btn-cyber inline-flex items-center justify-center gap-2 bg-neuro-green text-black font-orbitron font-bold py-3 px-8 rounded-full shadow-[0_0_20px_rgba(154,255,95,0.4)] hover:shadow-[0_0_40px_rgba(154,255,95,0.6)] hover:scale-105 transition-transform text-base uppercase tracking-wide">
+            <!-- MODIFICACIÓN: CTA Final más compacto -->
+            <a href="https://tally.so/r/1AdgPQ" target="_blank" class="btn-cyber inline-flex items-center justify-center gap-2 bg-neuro-green text-black font-orbitron font-bold py-2.5 px-6 md:py-3 md:px-8 rounded-full shadow-[0_0_20px_rgba(154,255,95,0.4)] hover:shadow-[0_0_40px_rgba(154,255,95,0.6)] hover:scale-105 transition-transform text-sm md:text-base uppercase tracking-wide">
               RESERVAR MI LUGAR
             </a>
           </div>
@@ -417,34 +412,34 @@
   </main>
 
   <!-- Footer -->
-  <footer class="glass-panel border-b-0 border-x-0 rounded-t-3xl py-12 mt-12 bg-black/60">
+  <footer class="glass-panel border-b-0 border-x-0 rounded-t-3xl py-10 mt-12 bg-black/60">
     <div class="max-w-4xl mx-auto px-6 text-center">
-      <div class="flex justify-center gap-8 mb-8">
+      <div class="flex justify-center gap-6 md:gap-8 mb-8">
         <a href="https://wa.me/5492604087086?text=Hola%20NeuroTech%20Soluciones!%20Me%20interesa%20inscribirme%20en%20el%20curso%20de%20IA%20Aplicada." target="_blank" class="group flex flex-col items-center gap-2 transition-transform duration-300 hover:-translate-y-2">
-            <img src="https://img.icons8.com/color/96/whatsapp--v1.png" width="40" alt="WhatsApp" class="drop-shadow-lg">
-            <span class="text-[10px] font-orbitron text-gray-500 group-hover:text-neuro-green transition-colors">WhatsApp</span>
+            <img src="https://img.icons8.com/color/96/whatsapp--v1.png" width="32" class="md:w-[40px]" alt="WhatsApp" class="drop-shadow-lg">
+            <span class="text-[9px] md:text-[10px] font-orbitron text-gray-500 group-hover:text-neuro-green transition-colors">WhatsApp</span>
         </a>
         <a href="https://www.instagram.com/neurotech.soluciones/" target="_blank" class="group flex flex-col items-center gap-2 transition-transform duration-300 hover:-translate-y-2">
-             <img src="https://img.icons8.com/color/96/instagram-new--v1.png" width="40" alt="Instagram" class="drop-shadow-lg">
-             <span class="text-[10px] font-orbitron text-gray-500 group-hover:text-[#E1306C] transition-colors">Instagram</span>
+             <img src="https://img.icons8.com/color/96/instagram-new--v1.png" width="32" class="md:w-[40px]" alt="Instagram" class="drop-shadow-lg">
+             <span class="text-[9px] md:text-[10px] font-orbitron text-gray-500 group-hover:text-[#E1306C] transition-colors">Instagram</span>
         </a>
         <a href="https://www.youtube.com/@neurotech-soluciones" target="_blank" class="group flex flex-col items-center gap-2 transition-transform duration-300 hover:-translate-y-2">
-            <img src="https://img.icons8.com/color/96/youtube-play.png" width="40" alt="YouTube" class="drop-shadow-lg">
-            <span class="text-[10px] font-orbitron text-gray-500 group-hover:text-[#FF0000] transition-colors">YouTube</span>
+            <img src="https://img.icons8.com/color/96/youtube-play.png" width="32" class="md:w-[40px]" alt="YouTube" class="drop-shadow-lg">
+            <span class="text-[9px] md:text-[10px] font-orbitron text-gray-500 group-hover:text-[#FF0000] transition-colors">YouTube</span>
         </a>
       </div>
       
-      <div class="text-gray-500 text-xs font-inter border-t border-white/5 pt-8 space-y-2">
+      <div class="text-gray-500 text-[10px] md:text-xs font-inter border-t border-white/5 pt-8 space-y-2">
         <p>📧 info@neurotechsoluciones.com</p>
         <p><strong>NeuroTech Cursos y Capacitaciones | San Rafael, Mendoza</strong></p>
-        <a href="{{ unsubscribe }}" class="inline-block mt-4 text-gray-600 underline text-[10px] hover:text-white">Desuscribirse de esta lista</a>
+        <a href="{{ unsubscribe }}" class="inline-block mt-4 text-gray-600 underline text-[9px] hover:text-white">Desuscribirse de esta lista</a>
       </div>
     </div>
   </footer>
 
   <!-- Botón Volver Arriba -->
-  <button id="scrollToTopBtn" onclick="scrollToTop()" class="fixed bottom-8 right-8 z-50 p-3 rounded-full bg-neuro-blue text-white shadow-lg border border-white/20 transition-all duration-300 opacity-0 translate-y-10 pointer-events-none hover:bg-white hover:text-neuro-blue hover:shadow-[0_0_20px_rgba(33,0,229,0.6)]">
-    <i data-lucide="arrow-up" class="w-6 h-6"></i>
+  <button id="scrollToTopBtn" onclick="scrollToTop()" class="fixed bottom-6 right-6 md:bottom-8 md:right-8 z-50 p-2.5 md:p-3 rounded-full bg-neuro-blue text-white shadow-lg border border-white/20 transition-all duration-300 opacity-0 translate-y-10 pointer-events-none hover:bg-white hover:text-neuro-blue hover:shadow-[0_0_20px_rgba(33,0,229,0.6)]">
+    <i data-lucide="arrow-up" class="w-5 h-5 md:w-6 md:h-6"></i>
   </button>
 
   <script>
