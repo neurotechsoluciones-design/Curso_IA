@@ -84,9 +84,10 @@
       -webkit-mask-image: radial-gradient(circle at center, black 40%, transparent 100%);
     }
 
+    /* Clase base del glass-panel */
     .glass-panel {
-      background: rgba(10, 10, 10, 0.7);
-      backdrop-filter: blur(16px);
+      background: rgba(10, 10, 10, 0.55);
+      backdrop-filter: blur(12px);
       border: 1px solid rgba(255, 255, 255, 0.08);
       box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
       transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -158,42 +159,55 @@
         No es solo usar una herramienta; es aprender a <span class="text-neuro-green font-bold">hablar el lenguaje de la IA</span> para transformar tu profesión y optimizar tu negocio.
       </p>
 
-      <div class="pt-2">
-        <!-- MODIFICACIÓN: CTA Inicio más compacto -->
-        <a href="https://tally.so/r/1AdgPQ" target="_blank" class="btn-cyber inline-flex items-center justify-center gap-3 bg-neuro-green text-black font-orbitron font-bold text-sm md:text-base py-2.5 px-6 md:py-3 md:px-8 rounded-full shadow-[0_0_20px_rgba(154,255,95,0.5)] hover:shadow-[0_0_40px_rgba(154,255,95,0.8)] hover:scale-105 transition-transform">
-          <span>INSCRIBIRME AHORA</span>
-          <i data-lucide="arrow-right" class="w-4 h-4 md:w-5 md:h-5"></i>
+      <!-- CTAs Dobles con Aclaración de Horarios -->
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-2">
+        <a href="https://tally.so/r/1AdgPQ" target="_blank" class="w-full sm:w-auto btn-cyber flex flex-col items-center justify-center gap-1 bg-neuro-green text-black font-orbitron py-3 px-8 rounded-full shadow-[0_0_20px_rgba(154,255,95,0.4)] hover:shadow-[0_0_40px_rgba(154,255,95,0.7)] hover:scale-105 transition-transform">
+          <div class="flex items-center gap-2 font-bold text-sm md:text-base">
+            <span>CURSO SÁBADOS</span>
+            <i data-lucide="calendar" class="w-4 h-4 md:w-5 md:h-5"></i>
+          </div>
+          <span class="text-[10px] md:text-xs font-inter font-bold tracking-wide opacity-80 uppercase">10:00 a 13:00 hs</span>
+        </a>
+        
+        <a href="https://tally.so/r/LZP4lz" target="_blank" class="w-full sm:w-auto btn-cyber flex flex-col items-center justify-center gap-1 bg-transparent border-2 border-neuro-green text-neuro-green font-orbitron py-3 px-8 rounded-full hover:bg-neuro-green/10 hover:scale-105 transition-transform">
+          <div class="flex items-center gap-2 font-bold text-sm md:text-base">
+            <span>CURSO JUEVES</span>
+            <i data-lucide="clock" class="w-4 h-4 md:w-5 md:h-5"></i>
+          </div>
+          <span class="text-[10px] md:text-xs font-inter font-bold tracking-wide opacity-80 uppercase">18:00 a 21:00 hs</span>
         </a>
       </div>
     </section>
 
     <!-- [ SECCIÓN 3: LOGROS ] -->
     <section class="relative animate-fade-in-up">
-      <div class="absolute inset-0 bg-[url('https://github.com/neurotechsoluciones-design/neurotech-assets/blob/main/fondo_seccion3.png?raw=true')] bg-cover bg-right opacity-20 rounded-3xl z-0"></div>
+      <!-- Opacidad subida drásticamente para revelar la textura -->
+      <div class="absolute inset-0 bg-[url('https://github.com/neurotechsoluciones-design/neurotech-assets/blob/main/fondo_seccion3.png?raw=true')] bg-cover bg-right opacity-80 rounded-3xl z-0"></div>
       
-      <div class="relative z-10 glass-panel rounded-3xl p-6 md:p-8 border-neuro-blue/30">
+      <div class="relative z-10 rounded-3xl p-6 md:p-8">
         <h2 class="text-xl md:text-2xl font-orbitron font-bold text-center mb-8 md:mb-10 text-white drop-shadow-md">¿Qué logras en 3 encuentros?</h2>
         
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
-          <div class="glass-panel p-5 md:p-6 rounded-2xl bg-black/40 border border-neuro-blue/30 hover:bg-neuro-blue/10">
+          <!-- Tarjetas internas oscurecidas (!bg-neuro-black/70) para máxima legibilidad de lectura -->
+          <div class="glass-panel p-5 md:p-6 rounded-2xl !bg-neuro-black/70 border border-neuro-blue/30 hover:!bg-neuro-blue/20 transition-colors">
             <div class="inline-block px-3 py-1 bg-neuro-blue/20 border border-neuro-blue text-white text-[9px] font-orbitron font-bold rounded mb-3">PASO 01</div>
             <h3 class="text-neuro-green font-orbitron font-bold text-sm mb-2">Instrucciones</h3>
             <p class="text-gray-300 text-xs md:text-sm leading-relaxed">Domina el arte de dar órdenes para que la IA te entienda a la primera.</p>
           </div>
           
-          <div class="glass-panel p-5 md:p-6 rounded-2xl bg-black/40 border border-neuro-green/30 hover:bg-neuro-green/10">
+          <div class="glass-panel p-5 md:p-6 rounded-2xl !bg-neuro-black/70 border border-neuro-green/30 hover:!bg-neuro-green/20 transition-colors">
             <div class="inline-block px-3 py-1 bg-neuro-green/10 border border-neuro-green text-neuro-green text-[9px] font-orbitron font-bold rounded mb-3">PASO 02</div>
             <h3 class="text-white font-orbitron font-bold text-sm mb-2">Gemelo Digital</h3>
             <p class="text-gray-300 text-xs md:text-sm leading-relaxed">Entrena a la IA con tu voz de marca para redactar con tu esencia.</p>
           </div>
 
-          <div class="glass-panel p-5 md:p-6 rounded-2xl bg-black/40 border border-neuro-green/30 hover:bg-neuro-green/10">
+          <div class="glass-panel p-5 md:p-6 rounded-2xl !bg-neuro-black/70 border border-neuro-green/30 hover:!bg-neuro-green/20 transition-colors">
             <div class="inline-block px-3 py-1 bg-neuro-green/10 border border-neuro-green text-neuro-green text-[9px] font-orbitron font-bold rounded mb-3">PASO 03</div>
             <h3 class="text-white font-orbitron font-bold text-sm mb-2">Asistente Ventas</h3>
             <p class="text-gray-300 text-xs md:text-sm leading-relaxed">Configura un experto que atienda tus clientes en segundos.</p>
           </div>
 
-          <div class="glass-panel p-5 md:p-6 rounded-2xl bg-black/40 border border-neuro-blue/30 hover:bg-neuro-blue/10">
+          <div class="glass-panel p-5 md:p-6 rounded-2xl !bg-neuro-black/70 border border-neuro-blue/30 hover:!bg-neuro-blue/20 transition-colors">
             <div class="inline-block px-3 py-1 bg-neuro-blue/20 border border-neuro-blue text-white text-[9px] font-orbitron font-bold rounded mb-3">PASO 04</div>
             <h3 class="text-neuro-green font-orbitron font-bold text-sm mb-2">Web Tools</h3>
             <p class="text-gray-300 text-xs md:text-sm leading-relaxed">Desarrolla herramientas interactivas sin escribir una sola línea de código.</p>
@@ -271,14 +285,15 @@
 
     <!-- [ SECCIÓN 5: PROGRAMA ] -->
     <section class="relative animate-fade-in-up">
-       <div class="absolute inset-0 bg-[url('https://github.com/neurotechsoluciones-design/neurotech-assets/blob/main/fondo_seccion3.png?raw=true')] bg-cover bg-left opacity-10 rounded-3xl z-0"></div>
+       <!-- Efecto Glassmorphism optimizado -->
+       <div class="absolute inset-0 bg-[url('https://github.com/neurotechsoluciones-design/neurotech-assets/blob/main/fondo_seccion3.png?raw=true')] bg-cover bg-left opacity-80 rounded-3xl z-0"></div>
        
-       <div class="relative z-10 glass-panel rounded-3xl p-6 md:p-8 border-neuro-blue/30">
+       <div class="relative z-10 rounded-3xl p-6 md:p-8">
          <h2 class="text-xl md:text-2xl font-orbitron font-bold text-center text-white mb-2">Programa IA Aplicada de 0 a 100</h2>
          <p class="text-neuro-green text-center text-[10px] font-bold uppercase tracking-widest mb-8 md:mb-10">Un viaje de 3 encuentros para dominar el 2026</p>
 
          <div class="space-y-4 md:space-y-6">
-           <div class="glass-panel p-5 md:p-6 rounded-2xl bg-white/5 hover:border-neuro-blue transition-colors">
+           <div class="glass-panel p-5 md:p-6 rounded-2xl !bg-neuro-black/70 border border-white/5 hover:border-neuro-blue transition-colors">
              <span class="bg-neuro-blue text-white text-[9px] font-orbitron font-bold px-3 py-1 rounded">Clase 1</span>
              <h3 class="text-neuro-green font-orbitron font-bold text-base md:text-lg mt-3 mb-2">EL CIMIENTO INMERSIVO</h3>
              <ul class="text-gray-300 text-xs md:text-sm space-y-2 list-disc pl-5 marker:text-neuro-blue">
@@ -289,7 +304,7 @@
              </ul>
            </div>
 
-           <div class="glass-panel p-5 md:p-6 rounded-2xl bg-white/5 hover:border-neuro-green transition-colors">
+           <div class="glass-panel p-5 md:p-6 rounded-2xl !bg-neuro-black/70 border border-white/5 hover:border-neuro-green transition-colors">
              <span class="bg-neuro-green/20 border border-neuro-green text-neuro-green text-[9px] font-orbitron font-bold px-3 py-1 rounded">Clase 2</span>
              <h3 class="text-neuro-green font-orbitron font-bold text-base md:text-lg mt-3 mb-2">PODER AUDIOVISUAL</h3>
              <ul class="text-gray-300 text-xs md:text-sm space-y-2 list-disc pl-5 marker:text-neuro-green">
@@ -299,7 +314,7 @@
              </ul>
            </div>
 
-           <div class="glass-panel p-5 md:p-6 rounded-2xl bg-white/5 hover:border-neuro-blue transition-colors">
+           <div class="glass-panel p-5 md:p-6 rounded-2xl !bg-neuro-black/70 border border-white/5 hover:border-neuro-blue transition-colors">
              <span class="bg-neuro-blue text-white text-[9px] font-orbitron font-bold px-3 py-1 rounded">Clase 3</span>
              <h3 class="text-neuro-green font-orbitron font-bold text-base md:text-lg mt-3 mb-2">EL FUTURO DEL TRABAJO</h3>
              <ul class="text-gray-300 text-xs md:text-sm space-y-2 list-disc pl-5 marker:text-neuro-blue">
@@ -317,20 +332,16 @@
       <h2 class="text-xl md:text-2xl font-orbitron font-bold mb-3">Equipo Docente</h2>
       <p class="text-gray-400 text-xs md:text-sm mb-8">Aprende junto a especialistas que simplifican lo complejo:</p>
       
-      <!-- Flex Grid Ajustado - 2 columnas en móvil, 5 en escritorio para evitar amontonamiento -->
       <div class="grid grid-cols-2 md:flex md:flex-wrap md:justify-center gap-6 md:gap-8">
-        <!-- Ivana -->
         <div class="group">
           <div class="w-20 h-20 md:w-24 md:h-24 mx-auto rounded-full p-1 border-2 border-neuro-blue group-hover:border-neuro-green transition-colors overflow-hidden">
             <img src="https://github.com/neurotechsoluciones-design/neurotech-assets/blob/main/Ivana.jpg?raw=true" class="w-full h-full object-cover rounded-full" alt="Ivana">
           </div>
           <strong class="block text-white mt-3 text-xs md:text-sm">Ivana Borlandelli</strong>
-          <!-- Títulos agregados según imagen -->
           <span class="text-[9px] text-neuro-blue-light block font-semibold mb-1">Ingeniera</span>
           <span class="text-[9px] text-neuro-green uppercase font-bold tracking-wider leading-tight">CEO & Estratega</span>
         </div>
 
-        <!-- Carolina -->
         <div class="group">
           <div class="w-20 h-20 md:w-24 md:h-24 mx-auto rounded-full p-1 border-2 border-neuro-blue group-hover:border-neuro-green transition-colors overflow-hidden">
             <img src="https://github.com/neurotechsoluciones-design/neurotech-assets/blob/main/Carolina.jpg?raw=true" class="w-full h-full object-cover rounded-full" alt="Carolina">
@@ -340,7 +351,6 @@
           <span class="text-[9px] text-neuro-green uppercase font-bold tracking-wider block leading-tight max-w-[100px] mx-auto">Responsable de Capacitaciones</span>
         </div>
 
-        <!-- Romina -->
         <div class="group">
           <div class="w-20 h-20 md:w-24 md:h-24 mx-auto rounded-full p-1 border-2 border-neuro-blue group-hover:border-neuro-green transition-colors overflow-hidden">
             <img src="https://github.com/neurotechsoluciones-design/neurotech-assets/blob/main/Romina.jpg?raw=true" class="w-full h-full object-cover rounded-full" alt="Romina">
@@ -350,7 +360,6 @@
           <span class="text-[9px] text-neuro-green uppercase font-bold tracking-wider block leading-tight max-w-[100px] mx-auto">Formadora Especialista</span>
         </div>
 
-        <!-- Gustavo -->
         <div class="group">
           <div class="w-20 h-20 md:w-24 md:h-24 mx-auto rounded-full p-1 border-2 border-neuro-blue group-hover:border-neuro-green transition-colors overflow-hidden">
             <img src="https://github.com/neurotechsoluciones-design/neurotech-assets/blob/main/Gustavo.jpg?raw=true" class="w-full h-full object-cover rounded-full" alt="Gustavo">
@@ -360,7 +369,6 @@
           <span class="text-[9px] text-neuro-green uppercase font-bold tracking-wider block leading-tight max-w-[100px] mx-auto">Formador Especialista</span>
         </div>
 
-        <!-- Vanesa -->
         <div class="group col-span-2 md:col-span-1">
           <div class="w-20 h-20 md:w-24 md:h-24 mx-auto rounded-full p-1 border-2 border-neuro-blue group-hover:border-neuro-green transition-colors overflow-hidden">
             <img src="https://github.com/neurotechsoluciones-design/neurotech-assets/blob/main/Vanesa.jpg?raw=true" class="w-full h-full object-cover rounded-full" alt="Vanesa">
@@ -400,10 +408,22 @@
               <span class="text-[10px] md:text-xs text-gray-500">(Este monto se descuenta del total final del curso).</span>
             </p>
 
-            <!-- MODIFICACIÓN: CTA Final más compacto -->
-            <a href="https://tally.so/r/1AdgPQ" target="_blank" class="btn-cyber inline-flex items-center justify-center gap-2 bg-neuro-green text-black font-orbitron font-bold py-2.5 px-6 md:py-3 md:px-8 rounded-full shadow-[0_0_20px_rgba(154,255,95,0.4)] hover:shadow-[0_0_40px_rgba(154,255,95,0.6)] hover:scale-105 transition-transform text-sm md:text-base uppercase tracking-wide">
-              RESERVAR MI LUGAR
-            </a>
+            <!-- CTAs Finales con Aclaración -->
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+              <a href="https://tally.so/r/1AdgPQ" target="_blank" class="w-full sm:w-auto btn-cyber flex flex-col items-center justify-center gap-1 bg-neuro-green text-black font-orbitron py-3 px-8 rounded-full shadow-[0_0_20px_rgba(154,255,95,0.4)] hover:shadow-[0_0_40px_rgba(154,255,95,0.6)] hover:scale-105 transition-transform">
+                <div class="flex items-center gap-2 font-bold text-sm md:text-base uppercase tracking-wide">
+                  <span>RESERVAR SÁBADOS</span>
+                </div>
+                <span class="text-[10px] md:text-xs font-inter font-bold tracking-wide opacity-80 uppercase">10:00 a 13:00 hs</span>
+              </a>
+              
+              <a href="https://tally.so/r/LZP4lz" target="_blank" class="w-full sm:w-auto btn-cyber flex flex-col items-center justify-center gap-1 bg-transparent border-2 border-neuro-green text-neuro-green font-orbitron py-3 px-8 rounded-full hover:bg-neuro-green/10 hover:scale-105 transition-transform">
+                <div class="flex items-center gap-2 font-bold text-sm md:text-base uppercase tracking-wide">
+                  <span>RESERVAR JUEVES</span>
+                </div>
+                <span class="text-[10px] md:text-xs font-inter font-bold tracking-wide opacity-80 uppercase">18:00 a 21:00 hs</span>
+              </a>
+            </div>
           </div>
         </div>
       </div>
