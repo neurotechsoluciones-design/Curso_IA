@@ -139,6 +139,9 @@
       animation: border-beam 3s linear infinite;
       z-index: -2;
     }
+    .btn-animated-border-blue::before {
+      background: conic-gradient(from 0deg, transparent 0%, transparent 30%, #2100E5 50%, transparent 70%, transparent 100%);
+    }
     .btn-inner {
       background: #020202;
       border-radius: 9999px;
@@ -149,6 +152,9 @@
     }
     .btn-animated-border:hover .btn-inner {
       background: rgba(154, 255, 95, 0.1);
+    }
+    .btn-animated-border-blue:hover .btn-inner {
+      background: rgba(33, 0, 229, 0.15);
     }
 
     /* Scrollbar Premium */
@@ -199,7 +205,7 @@
       </p>
 
       <!-- CTAs Principales -->
-      <div class="flex flex-col items-center justify-center pt-6 w-full">
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-6 w-full">
         <a href="https://tally.so/r/LZP4lz" target="_blank" class="w-full sm:w-auto btn-animated-border shadow-[0_0_30px_rgba(154,255,95,0.15)] hover:shadow-[0_0_50px_rgba(154,255,95,0.3)] hover:scale-[1.02] transition-all duration-300">
           <div class="btn-inner flex flex-col items-center justify-center py-4 px-8 sm:px-12">
             <div class="flex items-center gap-3 text-neuro-green font-orbitron font-bold text-base md:text-xl">
@@ -207,6 +213,15 @@
               <i class="ph-duotone ph-rocket text-xl md:text-2xl"></i>
             </div>
             <span class="text-[11px] md:text-xs font-inter text-gray-400 font-medium tracking-widest uppercase mt-1">Cursado Jueves de 20:00 a 22:00 hs</span>
+          </div>
+        </a>
+        <a href="https://tally.so/forms/1AdgPQ" target="_blank" class="w-full sm:w-auto btn-animated-border btn-animated-border-blue shadow-[0_0_30px_rgba(33,0,229,0.2)] hover:shadow-[0_0_50px_rgba(33,0,229,0.4)] hover:scale-[1.02] transition-all duration-300">
+          <div class="btn-inner flex flex-col items-center justify-center py-4 px-8 sm:px-12">
+            <div class="flex items-center gap-3 text-neuro-blue-light font-orbitron font-bold text-base md:text-xl">
+              <span>INSCRIBIRME AL CURSO</span>
+              <i class="ph-duotone ph-calendar-check text-xl md:text-2xl"></i>
+            </div>
+            <span class="text-[11px] md:text-xs font-inter text-gray-400 font-medium tracking-widest uppercase mt-1">Cursado Sábados de 10:00 a 12:00 hs</span>
           </div>
         </a>
       </div>
@@ -492,7 +507,7 @@
             </p>
 
             <!-- CTA Final Único (Premium) -->
-            <div class="flex justify-center w-full">
+            <div class="flex flex-col sm:flex-row justify-center gap-4 w-full">
               <a href="https://tally.so/r/LZP4lz" target="_blank" class="w-full sm:w-auto btn-animated-border shadow-[0_0_40px_rgba(154,255,95,0.2)] hover:shadow-[0_0_60px_rgba(154,255,95,0.4)] hover:scale-[1.02] transition-all duration-300">
                 <div class="btn-inner flex flex-col items-center justify-center py-5 px-10 sm:px-16">
                   <div class="flex items-center gap-3 text-white font-orbitron font-bold text-lg md:text-2xl uppercase tracking-wide">
@@ -500,6 +515,15 @@
                     <i class="ph-duotone ph-check-circle text-2xl text-neuro-green"></i>
                   </div>
                   <span class="text-xs md:text-sm font-inter text-neuro-green font-bold tracking-widest uppercase mt-2">Jueves 20:00 a 22:00 hs</span>
+                </div>
+              </a>
+              <a href="https://tally.so/forms/1AdgPQ" target="_blank" class="w-full sm:w-auto btn-animated-border btn-animated-border-blue shadow-[0_0_40px_rgba(33,0,229,0.25)] hover:shadow-[0_0_60px_rgba(33,0,229,0.45)] hover:scale-[1.02] transition-all duration-300">
+                <div class="btn-inner flex flex-col items-center justify-center py-5 px-10 sm:px-16">
+                  <div class="flex items-center gap-3 text-white font-orbitron font-bold text-lg md:text-2xl uppercase tracking-wide">
+                    <span>RESERVAR MI LUGAR</span>
+                    <i class="ph-duotone ph-check-circle text-2xl text-neuro-blue-light"></i>
+                  </div>
+                  <span class="text-xs md:text-sm font-inter text-neuro-blue-light font-bold tracking-widest uppercase mt-2">Sábados 10:00 a 12:00 hs</span>
                 </div>
               </a>
             </div>
