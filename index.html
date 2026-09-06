@@ -312,14 +312,18 @@
       min-width: 0;
       margin-top: clamp(10px, 2vw, 14px);
       display: grid;
-      grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr) auto minmax(0, 1fr);
-      gap: clamp(2px, .8vw, 5px);
+      grid-template-columns:
+        minmax(0, 1fr) auto
+        minmax(0, 1fr) auto
+        minmax(0, 1fr) auto
+        minmax(0, 1fr);
+      gap: clamp(2px, .55vw, 4px);
       align-items: center;
     }
 
     .countdown-unit {
       min-width: 0;
-      padding: clamp(7px, 1.4vw, 10px) 2px clamp(6px, 1.2vw, 8px);
+      padding: clamp(7px, 1.2vw, 10px) clamp(2px, .45vw, 5px) clamp(6px, 1vw, 8px);
       border: 1px solid rgba(154, 255, 95, .22);
       border-radius: clamp(9px, 1.5vw, 12px);
       background: rgba(154, 255, 95, .025);
@@ -330,7 +334,7 @@
       display: block;
       color: #9AFF5F;
       font-family: 'Orbitron', sans-serif;
-      font-size: clamp(1.18rem, 5.2vw, 1.75rem);
+      font-size: clamp(1.05rem, 3.9vw, 1.55rem);
       font-weight: 900;
       line-height: 1;
       letter-spacing: -.04em;
@@ -359,38 +363,70 @@
     }
 
     @media (min-width: 640px) {
+      .hero-commercial-row {
+        grid-template-columns: minmax(0, .82fr) minmax(0, 1.18fr);
+      }
       .hero-official-card,
       .hero-countdown-card { min-height: 150px; }
       .hero-official-price { font-size: clamp(2rem, 5vw, 2.65rem); }
-      .countdown-unit strong { font-size: clamp(1.45rem, 3.7vw, 2rem); }
+      .countdown-unit strong { font-size: clamp(1.25rem, 2.8vw, 1.75rem); }
     }
 
-    @media (max-width: 370px) {
+    /* Con 4 valores, en móvil es más legible usar el ancho completo. */
+    @media (max-width: 639px) {
       .hero-commercial-row {
-        grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
-        gap: 5px;
+        grid-template-columns: 1fr;
+        gap: 8px;
       }
+
       .hero-official-card,
-      .hero-countdown-card { padding: 11px 8px; min-height: 126px; }
-      .hero-card-heading { font-size: 7px; letter-spacing: .055em; }
-      .hero-official-price { font-size: clamp(1.55rem, 7vw, 1.72rem); }
-      .hero-official-date { font-size: 7px; }
-      .hero-countdown { gap: 2px; }
-      .countdown-unit { padding: 7px 1px 6px; }
-      .countdown-unit strong { font-size: clamp(1.05rem, 5vw, 1.2rem); }
-      .countdown-unit span { font-size: 5.7px; letter-spacing: 0; }
-      .countdown-separator { font-size: .9rem; }
+      .hero-countdown-card {
+        min-height: 0;
+        padding: 14px 15px;
+      }
+
+      .hero-official-price {
+        margin-top: 8px;
+        font-size: clamp(2rem, 10.5vw, 2.55rem);
+      }
+
+      .hero-official-date {
+        font-size: 9px;
+      }
+
+      .hero-countdown {
+        margin-top: 10px;
+        gap: 3px;
+      }
+
+      .countdown-unit {
+        padding: 8px 3px 7px;
+      }
+
+      .countdown-unit strong {
+        font-size: clamp(1.15rem, 6.4vw, 1.55rem);
+      }
+
+      .countdown-unit span {
+        font-size: clamp(5.5px, 1.9vw, 7px);
+        letter-spacing: 0;
+      }
+
+      .countdown-separator {
+        font-size: clamp(.85rem, 4vw, 1.1rem);
+      }
     }
 
     @media (max-width: 330px) {
-      .hero-commercial-row { grid-template-columns: 1fr; }
       .hero-official-card,
-      .hero-countdown-card { min-height: 122px; }
-      .hero-card-heading { font-size: 9px; }
+      .hero-countdown-card { padding: 12px 10px; }
+      .hero-card-heading { font-size: 8px; }
       .hero-official-price { font-size: 2rem; }
-      .hero-official-date { font-size: 9px; }
-      .countdown-unit strong { font-size: 1.45rem; }
-      .countdown-unit span { font-size: 7px; }
+      .hero-countdown { gap: 2px; }
+      .countdown-unit { padding-left: 1px; padding-right: 1px; }
+      .countdown-unit strong { font-size: 1.08rem; }
+      .countdown-unit span { font-size: 5px; }
+      .countdown-separator { font-size: .8rem; }
     }
 
   </style>
