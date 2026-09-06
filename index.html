@@ -220,7 +220,180 @@
       }
       #scrollToTopBtn { display:none !important; }
     }
-</style>
+
+
+    /* Precio oficial + cuenta regresiva del hero */
+    .hero-commercial-row {
+      width: 100%;
+      max-width: 36rem;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: minmax(0, .92fr) minmax(0, 1.08fr);
+      gap: clamp(6px, 1.8vw, 10px);
+      align-items: stretch;
+    }
+
+    .hero-official-card,
+    .hero-countdown-card {
+      min-width: 0;
+      min-height: 132px;
+      border: 1px solid rgba(154, 255, 95, .48);
+      border-radius: clamp(16px, 2.2vw, 22px);
+      background: linear-gradient(145deg, rgba(8, 10, 8, .96), rgba(2, 2, 2, .98));
+      box-shadow: 0 0 24px rgba(154, 255, 95, .07), inset 0 1px 0 rgba(255, 255, 255, .035);
+      overflow: hidden;
+    }
+
+    .hero-official-card {
+      padding: clamp(12px, 2.4vw, 18px);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: left;
+    }
+
+    .hero-countdown-card {
+      padding: clamp(12px, 2.4vw, 18px);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: left;
+    }
+
+    .hero-card-heading {
+      min-width: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 7px;
+      color: #9AFF5F;
+      font-family: 'Orbitron', sans-serif;
+      font-size: clamp(8px, 1.8vw, 11px);
+      font-weight: 700;
+      line-height: 1.2;
+      letter-spacing: .09em;
+      text-transform: uppercase;
+    }
+
+    .hero-card-heading span {
+      min-width: 0;
+    }
+
+    .hero-card-heading i {
+      flex: 0 0 auto;
+      font-size: clamp(15px, 3.2vw, 20px);
+      color: #9AFF5F;
+    }
+
+    .hero-official-price {
+      display: block;
+      width: 100%;
+      margin-top: clamp(10px, 2vw, 14px);
+      color: #9AFF5F;
+      font-family: 'Orbitron', sans-serif;
+      font-size: clamp(1.7rem, 7.2vw, 2.35rem);
+      font-weight: 900;
+      line-height: .98;
+      letter-spacing: -.06em;
+      white-space: nowrap;
+      text-shadow: 0 0 14px rgba(154, 255, 95, .12);
+    }
+
+    .hero-official-date {
+      display: block;
+      margin-top: 7px;
+      color: #7f8581;
+      font-size: clamp(8px, 1.9vw, 11px);
+      line-height: 1.25;
+      white-space: nowrap;
+    }
+
+    .hero-countdown {
+      min-width: 0;
+      margin-top: clamp(10px, 2vw, 14px);
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr) auto minmax(0, 1fr);
+      gap: clamp(2px, .8vw, 5px);
+      align-items: center;
+    }
+
+    .countdown-unit {
+      min-width: 0;
+      padding: clamp(7px, 1.4vw, 10px) 2px clamp(6px, 1.2vw, 8px);
+      border: 1px solid rgba(154, 255, 95, .22);
+      border-radius: clamp(9px, 1.5vw, 12px);
+      background: rgba(154, 255, 95, .025);
+      text-align: center;
+    }
+
+    .countdown-unit strong {
+      display: block;
+      color: #9AFF5F;
+      font-family: 'Orbitron', sans-serif;
+      font-size: clamp(1.18rem, 5.2vw, 1.75rem);
+      font-weight: 900;
+      line-height: 1;
+      letter-spacing: -.04em;
+      white-space: nowrap;
+      text-shadow: 0 0 12px rgba(154, 255, 95, .12);
+    }
+
+    .countdown-unit span {
+      display: block;
+      margin-top: 5px;
+      color: #777d79;
+      font-size: clamp(6px, 1.55vw, 8px);
+      font-weight: 700;
+      line-height: 1;
+      letter-spacing: .04em;
+      white-space: nowrap;
+    }
+
+    .countdown-separator {
+      color: #9AFF5F;
+      font-family: 'Orbitron', sans-serif;
+      font-size: clamp(1rem, 3.6vw, 1.45rem);
+      font-weight: 700;
+      line-height: 1;
+      opacity: .75;
+    }
+
+    @media (min-width: 640px) {
+      .hero-official-card,
+      .hero-countdown-card { min-height: 150px; }
+      .hero-official-price { font-size: clamp(2rem, 5vw, 2.65rem); }
+      .countdown-unit strong { font-size: clamp(1.45rem, 3.7vw, 2rem); }
+    }
+
+    @media (max-width: 370px) {
+      .hero-commercial-row {
+        grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
+        gap: 5px;
+      }
+      .hero-official-card,
+      .hero-countdown-card { padding: 11px 8px; min-height: 126px; }
+      .hero-card-heading { font-size: 7px; letter-spacing: .055em; }
+      .hero-official-price { font-size: clamp(1.55rem, 7vw, 1.72rem); }
+      .hero-official-date { font-size: 7px; }
+      .hero-countdown { gap: 2px; }
+      .countdown-unit { padding: 7px 1px 6px; }
+      .countdown-unit strong { font-size: clamp(1.05rem, 5vw, 1.2rem); }
+      .countdown-unit span { font-size: 5.7px; letter-spacing: 0; }
+      .countdown-separator { font-size: .9rem; }
+    }
+
+    @media (max-width: 330px) {
+      .hero-commercial-row { grid-template-columns: 1fr; }
+      .hero-official-card,
+      .hero-countdown-card { min-height: 122px; }
+      .hero-card-heading { font-size: 9px; }
+      .hero-official-price { font-size: 2rem; }
+      .hero-official-date { font-size: 9px; }
+      .countdown-unit strong { font-size: 1.45rem; }
+      .countdown-unit span { font-size: 7px; }
+    }
+
+  </style>
 </head>
 <body class="min-h-screen pb-20 selection:bg-neuro-green selection:text-black relative antialiased">
 
@@ -276,13 +449,44 @@
         </div>
       </div>
 
-      <div class="max-w-xl mx-auto rounded-[1.6rem] border border-neuro-green/35 bg-neuro-green/[0.035] px-4 py-4 sm:px-6 flex items-center justify-between gap-4 text-left shadow-[0_0_28px_rgba(154,255,95,0.08)]">
-        <div>
-          <span class="block text-[10px] sm:text-xs text-neuro-green font-orbitron font-bold tracking-[0.14em] uppercase">Preventa hasta 06/09</span>
-          <strong class="block text-3xl sm:text-4xl font-orbitron text-neuro-green leading-none mt-2">$64.900</strong>
-          <span class="block text-xs text-gray-500 mt-1">Precio oficial desde 06/09: $84.900</span>
-        </div>
-        <i class="ph-duotone ph-lightning text-4xl text-neuro-green shrink-0" aria-hidden="true"></i>
+      <div class="hero-commercial-row" aria-label="Precio oficial y cuenta regresiva al inicio del curso">
+        <article class="hero-official-card">
+          <div class="hero-card-heading">
+            <span>PRECIO OFICIAL</span>
+            <i class="ph-duotone ph-tag" aria-hidden="true"></i>
+          </div>
+          <strong class="hero-official-price" aria-label="Precio oficial 84 mil 900 pesos">$84.900</strong>
+          <span class="hero-official-date">Vigente desde 07/09</span>
+        </article>
+
+        <article class="hero-countdown-card">
+          <div class="hero-card-heading">
+            <span>CUENTA REGRESIVA</span>
+            <i class="ph-duotone ph-clock-countdown" aria-hidden="true"></i>
+          </div>
+          <div class="hero-countdown" aria-live="polite" aria-label="Tiempo restante hasta el inicio del curso">
+            <div class="countdown-unit">
+              <strong data-countdown-days>00</strong>
+              <span>DÍAS</span>
+            </div>
+            <span class="countdown-separator" aria-hidden="true">:</span>
+            <div class="countdown-unit">
+              <strong data-countdown-hours>00</strong>
+              <span>HORAS</span>
+            </div>
+            <span class="countdown-separator" aria-hidden="true">:</span>
+            <div class="countdown-unit">
+              <strong data-countdown-minutes>00</strong>
+              <span>MINUTOS</span>
+            </div>
+                      <span class="countdown-separator" aria-hidden="true">:</span>
+
+          <div class="countdown-unit">
+            <strong data-countdown-seconds>00</strong>
+            <span>SEG</span>
+          </div>
+          </div>
+        </article>
       </div>
 
       <div class="pt-1 w-full max-w-xl mx-auto">
@@ -543,55 +747,19 @@
           </p>
         </div>
 
+        <!-- PRECIO OFICIAL -->
+        <article class="official-price-card">
+          <div class="official-price-card__label">
+            <i class="ph-duotone ph-tag" aria-hidden="true"></i>
+            <span>PRECIO OFICIAL</span>
+          </div>
 
-        <!-- PRECIOS -->
-        <div class="pricing-grid">
+          <div class="official-price-card__price" aria-label="Precio oficial 84 mil 900 pesos">
+            $84.900
+          </div>
 
-          <!-- PRECIO OFICIAL -->
-          <article class="price-card price-card--official">
-            <div class="official-label">PRECIO OFICIAL</div>
-
-            <div class="official-price" aria-label="Precio oficial 84 mil 900 pesos">
-              $84.900
-            </div>
-
-            <div class="official-date">
-              <i class="ph-duotone ph-calendar-blank" aria-hidden="true"></i>
-              <span>Desde el 07/09</span>
-            </div>
-          </article>
-
-
-          <!-- PREVENTA -->
-          <article class="price-card price-card--presale">
-
-            <div class="presale-label">
-              <i class="ph-fill ph-lightning" aria-hidden="true"></i>
-              <span>PREVENTA EXCLUSIVA</span>
-            </div>
-
-            <div class="presale-price" aria-label="Precio de preventa 64 mil 900 pesos">
-              $64.900
-            </div>
-
-            <div class="presale-date">
-              <i class="ph-duotone ph-calendar-blank" aria-hidden="true"></i>
-              <span>
-                Hasta el <strong>06 de septiembre de 2026</strong> inclusive
-              </span>
-            </div>
-
-            <div class="presale-divider" aria-hidden="true"></div>
-
-            <div class="presale-copy">
-              Aprovechá el precio exclusivo de preventa<br class="pricing-desktop-break">
-              y asegurá tu lugar al mejor precio.
-            </div>
-
-          </article>
-
-        </div>
-
+          <div class="official-price-card__date">Vigente desde 07/09</div>
+        </article>
 
         <!-- CTA -->
         <a href="https://tally.so/r/LZP4lz"
@@ -605,7 +773,6 @@
             <i class="ph-bold ph-caret-right"></i>
           </span>
         </a>
-
 
         <!-- MICROCOPY -->
         <div class="pricing-microcopy">
@@ -621,19 +788,13 @@
     <style>
       /* =========================================================
          SECCIÓN 8: INVERSIÓN Y CUPO EXCLUSIVO
-         RESPONSIVE REAL PARA EL CONTENEDOR DE ESTA LANDING
          ========================================================= */
 
       .pricing-section {
         --pricing-black: #020403;
-        --pricing-black-soft: #070907;
         --pricing-white: #f4f6f2;
-        --pricing-gray: #929694;
-        --pricing-gray-soft: #b6bab7;
         --pricing-green: #a9ff17;
         --pricing-green-light: #c4ff3d;
-        --pricing-green-dark: #80e900;
-
         width: 100%;
         min-width: 0;
         color: var(--pricing-white);
@@ -648,12 +809,10 @@
         padding: clamp(28px, 4.5vw, 52px) clamp(18px, 4vw, 44px) clamp(24px, 4vw, 38px);
         position: relative;
         overflow: hidden;
-
         border: 1px solid rgba(255,255,255,.09);
         border-radius: clamp(22px, 3vw, 30px);
-
         background:
-          radial-gradient(circle at 72% 34%, rgba(169,255,23,.075), transparent 31%),
+          radial-gradient(circle at 50% 42%, rgba(169,255,23,.07), transparent 34%),
           linear-gradient(180deg, rgba(255,255,255,.012), rgba(255,255,255,.004)),
           #030504;
       }
@@ -671,16 +830,14 @@
       }
 
       .pricing-header,
-      .pricing-grid,
+      .official-price-card,
       .pricing-cta,
       .pricing-microcopy {
         position: relative;
         z-index: 1;
       }
 
-      .pricing-header {
-        text-align: center;
-      }
+      .pricing-header { text-align: center; }
 
       .pricing-header h2 {
         margin: 0;
@@ -707,201 +864,82 @@
         font-weight: 800;
       }
 
-
-      /* GRID */
-      .pricing-grid {
-        display: grid;
-        grid-template-columns: minmax(0, .92fr) minmax(0, 1.08fr);
-        gap: clamp(18px, 3vw, 30px);
-        align-items: stretch;
+      .official-price-card {
         width: 100%;
-        min-width: 0;
-        margin: 0 auto;
-      }
-
-
-      /* CARDS */
-      .price-card {
         min-width: 0;
         box-sizing: border-box;
-        border-radius: clamp(20px, 2.5vw, 28px);
-        padding: clamp(26px, 3.5vw, 36px) clamp(18px, 3vw, 30px);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        margin: 0 auto;
+        padding: clamp(30px, 5vw, 52px) clamp(14px, 4vw, 38px);
         overflow: hidden;
-      }
-
-
-      /* OFICIAL */
-      .price-card--official {
-        border: 1px solid rgba(255,255,255,.15);
-        background: linear-gradient(180deg, rgba(255,255,255,.022), rgba(255,255,255,.006));
-        color: var(--pricing-gray);
-      }
-
-      .official-label {
-        width: fit-content;
-        max-width: 100%;
-        margin: 0 auto clamp(22px, 3vw, 30px);
-        padding: 9px 20px;
-        border-radius: 999px;
-        background: rgba(255,255,255,.055);
-        color: #b8bbb9;
-        font-size: clamp(.82rem, 1.6vw, 1.05rem);
-        font-weight: 800;
-        letter-spacing: .035em;
-        text-align: center;
-      }
-
-      .official-price {
-        width: 100%;
-        text-align: center;
-        white-space: nowrap;
-        font-family: "Orbitron", monospace;
-        font-size: clamp(2.75rem, 6.2vw, 4.5rem);
-        font-weight: 900;
-        line-height: 1;
-        letter-spacing: -.055em;
-        color: #9ca09e;
-      }
-
-      .official-date {
-        margin-top: clamp(30px, 4vw, 44px);
-        padding-top: clamp(22px, 3vw, 30px);
-        border-top: 1px solid rgba(255,255,255,.10);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-        color: #aeb2af;
-        font-size: clamp(.95rem, 1.9vw, 1.15rem);
-        text-align: center;
-      }
-
-      .official-date i {
-        font-size: 1.4em;
-        flex: 0 0 auto;
-      }
-
-
-      /* PREVENTA */
-      .price-card--presale {
-        border: 1.5px solid rgba(169,255,23,.95);
+        border: 1.5px solid rgba(169,255,23,.88);
+        border-radius: clamp(20px, 2.8vw, 28px);
         background:
-          radial-gradient(circle at 50% 0%, rgba(169,255,23,.12), transparent 43%),
+          radial-gradient(circle at 50% 28%, rgba(169,255,23,.09), transparent 43%),
           #030503;
-
         box-shadow:
-          0 0 12px rgba(169,255,23,.42),
-          0 0 34px rgba(169,255,23,.13);
+          0 0 15px rgba(169,255,23,.22),
+          0 0 42px rgba(169,255,23,.08),
+          inset 0 1px 0 rgba(255,255,255,.035);
+        text-align: center;
       }
 
-      .presale-label {
-        width: fit-content;
-        max-width: 100%;
-        margin: 0 auto clamp(18px, 2.5vw, 22px);
-        padding: 10px 22px;
-        border-radius: 999px;
-
+      .official-price-card__label {
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        gap: 9px;
-
-        background: linear-gradient(90deg, var(--pricing-green), var(--pricing-green-light));
-        color: #071000;
-
-        font-size: clamp(.82rem, 1.7vw, 1rem);
-        font-weight: 900;
-        letter-spacing: .025em;
-        text-align: center;
-        line-height: 1.15;
-      }
-
-      .presale-label i {
-        font-size: 1.2em;
-        flex: 0 0 auto;
-      }
-
-      .presale-price {
-        width: 100%;
-        text-align: center;
-        white-space: nowrap;
-        font-family: "Orbitron", monospace;
-
-        /* Tamaño fluido limitado para que NUNCA desborde la card */
-        font-size: clamp(3.15rem, 7.5vw, 5.35rem);
-
-        line-height: 1;
-        font-weight: 900;
-        letter-spacing: -.06em;
+        gap: 8px;
         color: var(--pricing-green);
-        text-shadow: 0 0 13px rgba(169,255,23,.20);
-      }
-
-      .presale-date {
-        margin-top: clamp(20px, 3vw, 26px);
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
-        gap: 10px;
-        color: #e8ebe5;
-        font-size: clamp(.92rem, 1.8vw, 1.08rem);
-        line-height: 1.45;
-        text-align: center;
-      }
-
-      .presale-date i {
-        color: var(--pricing-green);
-        font-size: 1.35em;
-        flex: 0 0 auto;
-        margin-top: .05em;
-      }
-
-      .presale-date strong {
-        color: var(--pricing-green);
+        font-family: "Orbitron", "Arial Black", sans-serif;
+        font-size: clamp(.72rem, 1.5vw, .95rem);
         font-weight: 800;
+        letter-spacing: .12em;
+        line-height: 1.2;
       }
 
-      .presale-divider {
-        height: 1px;
+      .official-price-card__label i {
+        font-size: 1.15em;
+        flex: 0 0 auto;
+      }
+
+      .official-price-card__price {
         width: 100%;
-        margin: clamp(20px, 3vw, 27px) 0 clamp(17px, 2.5vw, 22px);
-        background: linear-gradient(90deg, transparent, rgba(169,255,23,.7), transparent);
-      }
-
-      .presale-copy {
-        color: #f1f3ef;
+        margin-top: clamp(18px, 3vw, 28px);
+        color: var(--pricing-green);
+        font-family: "Orbitron", monospace;
+        font-size: clamp(3.15rem, 10.5vw, 6.4rem);
+        font-weight: 900;
+        line-height: .94;
+        letter-spacing: -.065em;
+        white-space: nowrap;
         text-align: center;
-        font-size: clamp(.95rem, 1.8vw, 1.12rem);
-        line-height: 1.5;
+        text-shadow: 0 0 18px rgba(169,255,23,.16);
       }
 
+      .official-price-card__date {
+        margin-top: clamp(18px, 3vw, 28px);
+        color: #aeb3af;
+        font-size: clamp(.88rem, 1.7vw, 1.08rem);
+        line-height: 1.35;
+        text-align: center;
+      }
 
-      /* CTA */
       .pricing-cta {
         width: 100%;
         min-width: 0;
         min-height: clamp(82px, 11vw, 112px);
-        margin: clamp(28px, 4vw, 38px) auto 0;
+        margin: clamp(22px, 3.5vw, 32px) auto 0;
         padding: 16px clamp(68px, 9vw, 92px) 16px 24px;
         box-sizing: border-box;
-
         border-radius: clamp(18px, 2.5vw, 24px);
-
         display: flex;
         align-items: center;
         justify-content: center;
-
         background: linear-gradient(90deg, var(--pricing-green), var(--pricing-green-light));
         color: #020600;
         text-decoration: none;
-
         box-shadow:
           0 0 20px rgba(169,255,23,.35),
           0 0 42px rgba(169,255,23,.12);
-
         transition: transform .2s ease, box-shadow .2s ease;
       }
 
@@ -924,28 +962,22 @@
       .pricing-cta__arrow {
         position: absolute;
         right: clamp(16px, 3vw, 28px);
-
         width: clamp(48px, 6vw, 62px);
         height: clamp(48px, 6vw, 62px);
         border-radius: 50%;
-
         display: grid;
         place-items: center;
-
         background: #050705;
         color: var(--pricing-green);
         font-size: clamp(1.6rem, 3vw, 2.5rem);
       }
 
-
-      /* MICROCOPY */
       .pricing-microcopy {
         margin-top: 16px;
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 9px;
-
         color: #aeb3af;
         font-size: clamp(.82rem, 1.5vw, .98rem);
         line-height: 1.4;
@@ -958,39 +990,7 @@
         flex: 0 0 auto;
       }
 
-
-      /* =========================================================
-         TABLET / MOBILE
-         ========================================================= */
-
-      @media (max-width: 900px) {
-
-        .pricing-grid {
-          grid-template-columns: 1fr;
-          gap: 18px;
-        }
-
-        /* Prioridad comercial en móvil: preventa primero */
-        .price-card--presale {
-          order: 1;
-        }
-
-        .price-card--official {
-          order: 2;
-        }
-
-        .official-price {
-          font-size: clamp(2.8rem, 10vw, 4rem);
-        }
-
-        .presale-price {
-          font-size: clamp(3.1rem, 12vw, 4.6rem);
-        }
-      }
-
-
       @media (max-width: 600px) {
-
         .pricing-container {
           padding: 28px 14px 24px;
           border-radius: 22px;
@@ -1007,46 +1007,14 @@
           line-height: 1.5;
         }
 
-        .price-card {
-          padding: 25px 14px;
+        .official-price-card {
+          padding: 30px 9px;
           border-radius: 20px;
         }
 
-        .presale-label {
-          max-width: calc(100% - 8px);
-          padding: 9px 15px;
-          font-size: clamp(.76rem, 3.6vw, .9rem);
-          white-space: normal;
-        }
-
-        /* En móvil se reduce el mínimo para que $64.900 entre completo */
-        .presale-price {
-          font-size: clamp(2.55rem, 13.4vw, 3.55rem);
-          letter-spacing: -.065em;
-        }
-
-        .official-price {
-          font-size: clamp(2.35rem, 12vw, 3.25rem);
-          letter-spacing: -.06em;
-        }
-
-        .presale-date {
-          font-size: .93rem;
-          gap: 7px;
-        }
-
-        .presale-copy {
-          font-size: .98rem;
-        }
-
-        .pricing-desktop-break {
-          display: none;
-        }
-
-        .official-date {
-          margin-top: 28px;
-          padding-top: 22px;
-          font-size: .98rem;
+        .official-price-card__price {
+          font-size: clamp(2.7rem, 14.2vw, 4.2rem);
+          letter-spacing: -.07em;
         }
 
         .pricing-cta {
@@ -1073,29 +1041,24 @@
         }
       }
 
-
       @media (max-width: 390px) {
-
         .pricing-container {
           padding-left: 10px;
           padding-right: 10px;
         }
 
-        .price-card {
-          padding-left: 10px;
-          padding-right: 10px;
-        }
-
-        .presale-price {
-          font-size: clamp(2.35rem, 13vw, 3rem);
-        }
-
-        .official-price {
-          font-size: clamp(2.2rem, 11.7vw, 2.8rem);
+        .official-price-card__price {
+          font-size: clamp(2.55rem, 14.4vw, 3.45rem);
         }
 
         .pricing-cta__text {
           font-size: clamp(1.5rem, 7.6vw, 1.95rem);
+        }
+      }
+
+      @media (max-width: 340px) {
+        .official-price-card__price {
+          font-size: clamp(2.35rem, 14vw, 2.9rem);
         }
       }
     </style>
@@ -1136,9 +1099,9 @@
         </details>
         <details class="group py-5">
           <summary class="list-none cursor-pointer flex items-center justify-between gap-4 text-white font-semibold text-sm sm:text-base focus:outline-none">
-            ¿Hasta cuándo está disponible la preventa? <i class="ph-bold ph-plus text-neuro-green transition-transform group-open:rotate-45" aria-hidden="true"></i>
+            ¿Cuál es el valor del curso? <i class="ph-bold ph-plus text-neuro-green transition-transform group-open:rotate-45" aria-hidden="true"></i>
           </summary>
-          <p class="text-gray-400 text-sm leading-relaxed pt-3 pr-8">El valor de preventa es $64.900 hasta el 05 de septiembre de 2026 inclusive. 07/09 el precio oficial es $84.900.</p>
+          <p class="text-gray-400 text-sm leading-relaxed pt-3 pr-8">El precio oficial del curso es $84.900.</p>
         </details>
         <details class="group py-5">
           <summary class="list-none cursor-pointer flex items-center justify-between gap-4 text-white font-semibold text-sm sm:text-base focus:outline-none">
@@ -1160,8 +1123,8 @@
   <!-- CTA fijo de conversión para móvil -->
   <div class="mobile-sticky-cta" role="region" aria-label="Inscripción al curso">
     <div class="mobile-sticky-cta__price">
-      <small>Preventa</small>
-      <strong>$64.900</strong>
+      <small>Precio oficial</small>
+      <strong>$84.900</strong>
     </div>
     <a href="https://tally.so/r/LZP4lz" target="_blank" rel="noopener noreferrer" class="mobile-sticky-cta__button">
       INSCRIBIRME <i class="ph-bold ph-arrow-right" aria-hidden="true"></i>
@@ -1216,6 +1179,40 @@
     function scrollToTop() {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     }
+
+    // Cuenta regresiva hasta el comienzo del curso: 10/09/2026 20:00 (UTC-3)
+    const targetDate = new Date("2026-09-10T20:00:00-03:00");
+
+    function updateCountdown() {
+        const now = new Date();
+        const remaining = Math.max(0, targetDate.getTime() - now.getTime());
+
+        const totalSeconds = Math.floor(remaining / 1000);
+
+        const days = Math.floor(totalSeconds / (60 * 60 * 24));
+        const hours = Math.floor((totalSeconds % (60 * 60 * 24)) / (60 * 60));
+        const minutes = Math.floor((totalSeconds % (60 * 60)) / 60);
+        const seconds = totalSeconds % 60;
+
+        document.querySelectorAll('[data-countdown-days]').forEach((element) => {
+            element.textContent = String(days).padStart(2, "0");
+        });
+
+        document.querySelectorAll('[data-countdown-hours]').forEach((element) => {
+            element.textContent = String(hours).padStart(2, "0");
+        });
+
+        document.querySelectorAll('[data-countdown-minutes]').forEach((element) => {
+            element.textContent = String(minutes).padStart(2, "0");
+        });
+
+        document.querySelectorAll('[data-countdown-seconds]').forEach((element) => {
+            element.textContent = String(seconds).padStart(2, "0");
+        });
+    }
+
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
   </script>
 </body>
 </html>
