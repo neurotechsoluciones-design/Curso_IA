@@ -5,19 +5,75 @@ const ENDPOINT="https://script.google.com/macros/s/AKfycbzSjElbM2qmIaA8oFqrlTBG9
 const f=document.querySelector("#survey"), status=document.querySelector("#status"), send=document.querySelector("#send");
 const toolInputs=[...f.querySelectorAll('[name="q1"]')];
 toolInputs.forEach(x=>x.addEventListener("change",()=>{if(x.checked&&x.value==="Ninguna")toolInputs.filter(t=>t!==x).forEach(t=>t.checked=false);if(x.checked&&x.value!=="Ninguna")toolInputs.find(t=>t.value==="Ninguna").checked=false;document.querySelector("#other").hidden=!toolInputs.find(t=>t.value==="Otra").checked;}));
-let pending=null;
+const receiver = document.querySelector("#receiver");
+let pending = null;
+let lastAttempt = null;
+function fromReceiver(source) {
+  while (source && source !== window) {
+    if (source === receiver.contentWindow) return true;
+    if (source === source.parent) break;
+    source = source.parent;
+  }
+  return false;
+}
 function show(text,error=false){status.hidden=false;status.textContent=text;status.className="status"+(error?" error":"");status.scrollIntoView({behavior:"smooth",block:"center"});}
 function fail(text){send.disabled=false;send.textContent="Reintentar envío";show(text,true);}
-window.addEventListener("message",e=>{if(!pending||!e.data||e.data.type!=="neurotech-survey"||e.data.id!==pending)return;if(!e.origin.endsWith(".googleusercontent.com")&&!e.origin.endsWith(".google.com"))return;pending=null;if(e.data.ok){f.hidden=true;document.querySelector("#thanks").hidden=false;document.querySelector("#thanks").scrollIntoView({behavior:"smooth",block:"center"});}else fail("No se pudieron guardar las respuestas. Revisá la conexión e intentá nuevamente.");});
+window.addEventListener("message", event => {
+  const {data, origin, source} = event;
+  if (!pending || data?.type !== "neurotech-survey" || data.id !== pending.id ||
+      typeof data.ok !== "boolean" || !fromReceiver(source)) return;
+  if (origin !== "https://script.google.com" &&
+      !/^https:\/\/[a-z0-9.-]+\.googleusercontent\.com$/.test(origin)) return;
+
+  clearTimeout(pending.timer);
+  pending = null;
+  if (!data.ok) {
+    fail("No se pudieron guardar las respuestas. Revisá la conexión e intentá nuevamente.");
+    return;
+  }
+  f.hidden = true;
+  const thanks = document.querySelector("#thanks");
+  thanks.hidden = false;
+  thanks.scrollIntoView({behavior:"smooth",block:"center"});
+});
 f.addEventListener("submit",e=>{e.preventDefault();if(pending)return;f.querySelectorAll(".missing").forEach(el=>el.classList.remove("missing"));f.querySelectorAll(".warn").forEach(el=>{el.hidden=true;el.textContent=""});let missing=[];
 for(const n of ["nombre","correo","telefono"]){let el=f.elements[n];if(!el.value.trim()||(n==="correo"&&!el.checkValidity())){el.closest(".field").classList.add("missing");missing.push({el,label:n==="nombre"?"Nombre y apellido":n==="correo"?"Correo electrónico":"Teléfono"});}}
 for(let i=1;i<=11;i++){let els=[...f.querySelectorAll('[name="q'+i+'"]')],valid=i===11?!!els[0].value.trim():els.some(x=>x.checked);if(!valid){let fs=document.querySelector("#q"+i);fs.classList.add("missing");fs.querySelector(".warn").hidden=false;fs.querySelector(".warn").textContent="Completá esta pregunta.";missing.push({el:els[0],label:"Pregunta "+i});}}
 if(!document.querySelector("#other").hidden&&!f.elements.otra.value.trim()){missing.push({el:f.elements.otra,label:"Otra herramienta"});}
 if(missing.length){show("Te falta completar: "+missing.map(x=>x.label).join(", ")+".",true);missing[0].el.scrollIntoView({behavior:"smooth",block:"center"});return;}
 const d=new FormData(f),r={};for(let i=1;i<=11;i++)r[i]=i===1?d.getAll("q1"):d.get("q"+i);if(d.get("otra"))r[1]=r[1].map(x=>x==="Otra"?"Otra: "+d.get("otra"):x);
-const id=Date.now()+"-"+Math.random().toString(36).slice(2);pending=id;send.disabled=true;send.textContent="Enviando...";show("Estamos registrando tus respuestas. Esperá unos segundos.");
-const bridge=document.createElement("form");bridge.method="POST";bridge.action=ENDPOINT;bridge.target="receiver";bridge.hidden=true;
-for(const [k,v] of Object.entries({nombre:d.get("nombre"),correo:d.get("correo"),telefono:d.get("telefono"),respuestas_json:JSON.stringify(r),request_id:id,website:""})){const input=document.createElement("input");input.name=k;input.value=v;bridge.appendChild(input);}document.body.appendChild(bridge);bridge.submit();bridge.remove();
-setTimeout(()=>{if(pending===id){pending=null;fail("No recibimos confirmación de Google Sheets. No vuelvas a enviar varias veces. Avisá a NeuroTech para verificar si se guardó.");}},20000);
+const fields = {
+  nombre: d.get("nombre"),
+  correo: d.get("correo"),
+  telefono: d.get("telefono"),
+  respuestas_json: JSON.stringify(r),
+  website: ""
+};
+const payload = JSON.stringify(fields);
+const id = lastAttempt?.payload === payload ? lastAttempt.id : crypto.randomUUID();
+lastAttempt = {id, payload};
+pending = {id, timer: setTimeout(() => {
+  pending = null;
+  fail("No recibimos confirmación de Google Sheets. Avisá a NeuroTech para verificar si se guardó antes de volver a enviar.");
+}, 45000)};
+send.disabled = true;
+send.textContent = "Enviando...";
+show("Estamos registrando tus respuestas. Esperá unos segundos.");
+
+const bridge = document.createElement("form");
+bridge.method = "POST";
+bridge.action = ENDPOINT;
+bridge.target = receiver.name;
+bridge.hidden = true;
+for (const [name, value] of Object.entries({...fields, request_id: id})) {
+  const input = document.createElement("input");
+  input.type = "hidden";
+  input.name = name;
+  input.value = value;
+  bridge.appendChild(input);
+}
+document.body.appendChild(bridge);
+bridge.submit();
+bridge.remove();
 });
 </script></body></html>
